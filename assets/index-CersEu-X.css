@@ -65,7 +65,7 @@ select:focus {
   transition: background-color 0.3s ease;
 }
 ._submitButton_1wn89_127:hover {
-  background-color: #ff6b6b;
+  background-color: #ff8749;
 }
 ._sidebar_1wn89_159 {
   flex: 1;
@@ -102,7 +102,7 @@ select:focus {
   transition: all 0.3s ease;
 }
 ._firstBtn_1wn89_201:hover {
-  background-color: #ff6b6b;
+  background-color: #ff8749;
   color: #fff;
   border: 0px solid #0d4f4f;
 }
@@ -1186,7 +1186,7 @@ video {
 }
 .bg-\[\#f2a92a\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 107 107 / var(--tw-bg-opacity, 1));  /* was rgb(242 169 42 / ...) */
+  background-color: rgb(255 135 73 / var(--tw-bg-opacity, 1));
 }
 .bg-\[\#f6f8f1\] {
   --tw-bg-opacity: 1;
@@ -1546,7 +1546,7 @@ video {
 }
 .text-\[\#f2a92a\] {
   --tw-text-opacity: 1;
-  color: rgb(255 107 107 / var(--tw-text-opacity, 1));  /* was rgb(242 169 42 / ...) */
+  color: rgb(255 135 73 / var(--tw-text-opacity, 1));
 }
 .text-\[\#f6f8f1\] {
   --tw-text-opacity: 1;
@@ -1858,15 +1858,15 @@ video {
 }
 .hover\:bg-\[\#f2a92a\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 107 107 / var(--tw-bg-opacity, 1));  /* was rgb(242 169 42 / ...) */
+  background-color: rgb(255 135 73 / var(--tw-bg-opacity, 1));
 }
 .hover\:bg-\[\#f5a51c\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 82 82 / var(--tw-bg-opacity, 1));  /* was rgb(245 165 28 / ...) */
+  background-color: rgb(255 135 73 / var(--tw-bg-opacity, 1));
 }
 .hover\:bg-\[\#f7a414\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 82 82 / var(--tw-bg-opacity, 1));  /* was rgb(247 164 20 / ...) */
+  background-color: rgb(255 135 73 / var(--tw-bg-opacity, 1));  /* was rgb(247 164 20 / ...) */
 }
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
@@ -1918,7 +1918,7 @@ video {
 }
 .hover\:text-\[\#f2a92a\]:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 107 107 / var(--tw-text-opacity, 1));  /* was rgb(242 169 42 / ...) */
+  color: rgb(255 135 73 / var(--tw-text-opacity, 1));  /* was rgb(242 169 42 / ...) */
 }
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
