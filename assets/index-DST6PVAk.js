@@ -14670,7 +14670,7 @@ const Tx = "/assets/main.png",
     },
     {
       label: "Teams",
-      email: "",
+      email: "sales@gtrsupply.com",
       subtitle: "Reach us now on Email",
       icon: "https://cdn-icons-png.freepik.com/256/15238/15238349.png?uid=R200013273&ga=GA1.1.423106261.1744311874&semt=ais_white_label",
       aria: "Teams contact email ",
