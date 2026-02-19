@@ -11963,10 +11963,20 @@ const Pm = v.createContext(null),
                           s.jsx(Pi, { className: "w-4 h-4 text-white" }),
                           s.jsx("span", {
                             className: "text-white text-sm",
-                            children: "support@gtrsupply.com",
+                            children: "sales@gtrsupply.com",
                           }),
                         ],
                       }),
+                      s.jsxs("div", {
+  className: "flex items-center space-x-3",
+  children: [
+    s.jsx(Pi, { className: "w-4 h-4 text-white" }),
+    s.jsx("span", {
+      className: "text-white text-sm",
+      children: "purchase@gtrsupply.com",
+    }),
+  ],
+}),
                     ],
                   }),
                 ],
@@ -14647,9 +14657,9 @@ const Tx = "/assets/main.png",
   Qx = [
     {
       label: "WhatsApp",
-      subtitle: "Chat: +1 737 210 4824",
+      subtitle: "Chat: +1 945 397 7765",
       icon: "https://cdn-icons-png.freepik.com/256/134/134937.png?ga=GA1.1.42662198.1754514420&semt=ais_white_label",
-      aria: "WhatsApp contact chat +1 737 210 4824",
+      aria: "WhatsApp contact chat +1 945 397 7765",
     },
     {
       label: "Phone",
@@ -14660,10 +14670,10 @@ const Tx = "/assets/main.png",
     },
     {
       label: "Teams",
-      email: "support@gtrsupply.com",
+      email: "",
       subtitle: "Reach us now on Email",
       icon: "https://cdn-icons-png.freepik.com/256/15238/15238349.png?uid=R200013273&ga=GA1.1.423106261.1744311874&semt=ais_white_label",
-      aria: "Teams contact email support@gtrsupply.com",
+      aria: "Teams contact email ",
     },
   ],
   Zc = [
@@ -14841,7 +14851,7 @@ const Tx = "/assets/main.png",
                             children: "Browse Products",
                           }),
                           s.jsxs("a", {
-    href: "https://wa.me/17372104824?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote",
+    href: "https://wa.me/19453977765?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote",
     target: "_blank",
     rel: "noopener noreferrer",
     className:
@@ -15287,7 +15297,7 @@ const Tx = "/assets/main.png",
               s.jsx("div", {
                 className: "mt-auto",
                 children: s.jsxs("button", {
-                  onClick: (ev) => { ev.preventDefault(); ev.stopPropagation(); window.open(`https://wa.me/17372104824?text=${encodeURIComponent(`Hi, I'm interested in ${e.name}`)}`, '_blank'); },
+                  onClick: (ev) => { ev.preventDefault(); ev.stopPropagation(); window.open(`https://wa.me/19453977765?text=${encodeURIComponent(`Hi, I'm interested in ${e.name}`)}`, '_blank'); },
                   disabled: !e.inStock,
                   className: `w-full flex items-center justify-center space-x-2 py-2.5 px-4 rounded-lg font-medium transition-all duration-200 ${
                     e.inStock
@@ -17937,7 +17947,7 @@ const Xx = () => {
                           className: "flex space-x-4",
                           children: [
                             s.jsxs("button", {
-                              onClick: (ev) => { ev.preventDefault(); ev.stopPropagation(); window.open(`https://wa.me/17372104824?text=${encodeURIComponent(`Hi, I'm interested in ${x.name}`)}`, '_blank'); },
+                              onClick: (ev) => { ev.preventDefault(); ev.stopPropagation(); window.open(`https://wa.me/19453977765?text=${encodeURIComponent(`Hi, I'm interested in ${x.name}`)}`, '_blank'); },
                               disabled: !x.inStock,
                               className:
                                 "flex-1 bg-[#132c52] hover:bg-[#0a4545] disabled:bg-gray-300 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-colors",
@@ -20475,9 +20485,9 @@ const ty = () => {
                 "Email:",
                 " ",
                 s.jsx("a", {
-                  href: "mailto:support@gtrsupply.com",
+                  href: "mailto:",
                   className: "text-blue-600 underline",
-                  children: "support@gtrsupply.com",
+                  children: "",
                 }),
               ],
             }),
@@ -21030,7 +21040,7 @@ const
                       children: "Support",
                     }),
                     s.jsx("a", {
-                      href: "mailto:support@gtrsupply.com",
+                      href: "mailto:",
                       className:
                         "inline-block border border-orange-400 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-orange-100 transition",
                       children: "Email Us Â»",
@@ -21046,10 +21056,10 @@ const
                       children: "Orders",
                     }),
                     s.jsx("a", {
-                      href: "mailto:support@gtrsupply.com",
+                      href: "mailto:",
                       className:
                         "inline-block border border-orange-400 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-orange-100 transition",
-                      children: "support@gtrsupply.com Â»",
+                      children: " Â»",
                     }),
                   ],
                 }),
@@ -21510,9 +21520,9 @@ const
                       s.jsx("strong", { children: "Email:" }),
                       " ",
                       s.jsx("a", {
-                        href: "mailto:support@gtrsupply.com",
+                        href: "mailto:",
                         className: "text-blue-600 underline",
-                        children: "support@gtrsupply.com",
+                        children: "",
                       }),
                       s.jsx("br", {}),
                       s.jsx("strong", { children: "Website:" }),
@@ -21684,9 +21694,9 @@ const
                       s.jsx("strong", { children: "Email:" }),
                       " ",
                       s.jsx("a", {
-                        href: "mailto:support@gtrsupply.com",
+                        href: "mailto:",
                         className: "text-blue-600 underline",
-                        children: "support@gtrsupply.com",
+                        children: "",
                       }),
                       s.jsx("br", {}),
                     ],
@@ -21756,9 +21766,9 @@ const wy = () =>
               children: [
                 "Complete the RMA form or email ",
                 s.jsx("a", {
-                  href: "mailto:support@gtrsupply.com",
+                  href: "mailto:",
                   className: "text-blue-600 underline",
-                  children: "support@gtrsupply.com",
+                  children: "",
                 }),
                 " to request a Return Merchandise Authorization (RMA) number.",
               ],
@@ -21861,9 +21871,9 @@ const wy = () =>
           children: [
             "Orders ship within 2 to 5 business days. If your order does not arrive within the estimated delivery window, please contact us at ",
             s.jsx("a", {
-              href: "mailto:support@gtrsupply.com",
+              href: "mailto:",
               className: "text-blue-600 underline",
-              children: "support@gtrsupply.com",
+              children: "",
             }),
             ".",
             s.jsx("br", {}),
@@ -21963,9 +21973,9 @@ const wy = () =>
           children: [
             "Email: ",
             s.jsx("a", {
-              href: "mailto:support@gtrsupply.com",
+              href: "mailto:",
               className: "text-blue-600 underline",
-              children: "support@gtrsupply.com",
+              children: "",
             }),
           ],
         }),
@@ -22251,8 +22261,8 @@ const wy = () =>
                     }),
                     s.jsx("p", {
                       children: s.jsx("a", {
-                        href: "mailto:support@gtrsupply.com",
-                        children: "support@gtrsupply.com",
+                        href: "mailto:",
+                        children: "sales@gtrsupply.com",
                       }),
                     }),
                     s.jsx("p", {
