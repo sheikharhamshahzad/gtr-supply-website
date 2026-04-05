@@ -11605,6 +11605,7 @@ const Pm = v.createContext(null),
         { name: "Memory", href: "/products?category=memory" },
         { name: "Processors", href: "/products?category=processors" },
         { name: "Desktops", href: "/products?category=desktops" },
+        { name: "Solar", href: "/solar" },
       ],
       f = (x) => {
         x.preventDefault(),
@@ -11677,7 +11678,7 @@ const Pm = v.createContext(null),
           }),
         }),
         s.jsx("nav", {
-          className: "bg-[#f2a92a] border-t border-gray-200",
+          className: "bg-[#000000] border-t border-gray-200",
           children: s.jsx("div", {
             className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
             children: s.jsxs("div", {
@@ -11689,7 +11690,7 @@ const Pm = v.createContext(null),
                   children: [
                     s.jsx(F, {
                       to: "/products",
-                      className: "font-medium hover:text-[#122853]",
+                      className: "font-medium hover:text-sky-400 transition-colors",
                       children: "All Products",
                     }),
                     h.map((x) =>
@@ -11697,7 +11698,7 @@ const Pm = v.createContext(null),
                         F,
                         {
                           to: x.href,
-                          className: "font-medium hover:text-[#122853]",
+                          className: "font-medium hover:text-sky-400 transition-colors",
                           children: x.name,
                         },
                         x.name
@@ -11822,7 +11823,7 @@ const Pm = v.createContext(null),
                 className: "space-y-4",
                 children: [
                   s.jsx("h3", {
-                    className: "text-lg text-[#f2a92a] font-semibold",
+                    className: "text-lg text-white font-bold",
                     children: "Products",
                   }),
                   s.jsxs("ul", {
@@ -11832,7 +11833,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/products?category=servers",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Servers",
                         }),
                       }),
@@ -11840,7 +11841,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/products?category=storage",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Storage Solutions",
                         }),
                       }),
@@ -11848,7 +11849,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/products?category=networking",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Networking Equipment",
                         }),
                       }),
@@ -11856,7 +11857,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/products?category=memory",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Memory & RAM",
                         }),
                       }),
@@ -11864,7 +11865,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/products?category=processors",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Processors",
                         }),
                       }),
@@ -11872,8 +11873,16 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/products?category=graphics",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Graphics Cards",
+                        }),
+                      }),
+                      s.jsx("li", {
+                        children: s.jsx(F, {
+                          to: "/solar",
+                          className:
+                            "text-white hover:text-[#000000] transition-colors text-sm",
+                          children: "Solar",
                         }),
                       }),
                     ],
@@ -11884,7 +11893,7 @@ const Pm = v.createContext(null),
                 className: "space-y-4",
                 children: [
                   s.jsx("h3", {
-                    className: "text-lg text-[#f2a92a] font-semibold",
+                    className: "text-lg text-white font-bold",
                     children: "Support",
                   }),
                   s.jsxs("ul", {
@@ -11895,7 +11904,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/warranty",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Warranty",
                         }),
                       }),
@@ -11903,7 +11912,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/returns",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Returns & Exchanges",
                         }),
                       }),
@@ -11911,7 +11920,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/shipping",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Shipping Info",
                         }),
                       }),
@@ -11920,7 +11929,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/privacy",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Privacy Policy",
                         }),
                       }),
@@ -11929,7 +11938,7 @@ const Pm = v.createContext(null),
                         children: s.jsx(F, {
                           to: "/terms",
                           className:
-                            "text-white hover:text-[#f2a92a] transition-colors text-sm",
+                            "text-white hover:text-[#000000] transition-colors text-sm",
                           children: "Terms & Condition",
                         }),
                       }),
@@ -11941,19 +11950,42 @@ const Pm = v.createContext(null),
                 className: "space-y-4",
                 children: [
                   s.jsx("h3", {
-                    className: "text-lg text-[#f2a92a] font-semibold",
+                    className: "text-lg text-white font-bold",
                     children: "Contact",
                   }),
                   s.jsxs("div", {
                     className: "space-y-3",
                     children: [
                       s.jsxs("div", {
+                        children: [
+                          s.jsx("div", { className: "text-white text-sm font-medium", children: "GTR Supply LLC" }),
+                          s.jsx("div", { className: "text-white text-xs", children: "3571 Far West Blvd, Unit #6025" }),
+                          s.jsx("div", { className: "text-white text-xs", children: "Austin, TX 78731" })
+                        ]
+                      }),
+                      s.jsxs("div", {
                         className: "flex items-center space-x-3",
                         children: [
                           s.jsx(ho, { className: "w-4 h-4 text-white" }),
-                          s.jsx("span", {
+                          s.jsxs("span", {
                             className: "text-white text-sm",
-                            children: "+1 737 210 4824",
+                            children: [
+                              s.jsx("a", { href: "tel:+17372104824", className: "hover:underline", children: "+1 (737) 210-4824" }),
+                              s.jsx("span", { className: "text-gray-400 text-xs ml-1", children: "(Support)" }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      s.jsxs("div", {
+                        className: "flex items-center space-x-3",
+                        children: [
+                          s.jsx(ho, { className: "w-4 h-4 text-white" }),
+                          s.jsxs("span", {
+                            className: "text-white text-sm",
+                            children: [
+                              s.jsx("a", { href: "tel:+17373801001", className: "hover:underline", children: "+1 (737) 380-1001" }),
+                              s.jsx("span", { className: "text-gray-400 text-xs ml-1", children: "(Purchase)" }),
+                            ],
                           }),
                         ],
                       }),
@@ -11961,8 +11993,9 @@ const Pm = v.createContext(null),
                         className: "flex items-center space-x-3",
                         children: [
                           s.jsx(Pi, { className: "w-4 h-4 text-white" }),
-                          s.jsx("span", {
-                            className: "text-white text-sm",
+                          s.jsx("a", {
+                            href: "mailto:sales@gtrsupply.com",
+                            className: "text-white text-sm hover:underline",
                             children: "sales@gtrsupply.com",
                           }),
                         ],
@@ -11971,9 +12004,21 @@ const Pm = v.createContext(null),
   className: "flex items-center space-x-3",
   children: [
     s.jsx(Pi, { className: "w-4 h-4 text-white" }),
-    s.jsx("span", {
-      className: "text-white text-sm",
+    s.jsx("a", {
+      href: "mailto:purchase@gtrsupply.com",
+      className: "text-white text-sm hover:underline",
       children: "purchase@gtrsupply.com",
+    }),
+  ],
+}),
+                      s.jsxs("div", {
+  className: "flex items-center space-x-3",
+  children: [
+    s.jsx(Pi, { className: "w-4 h-4 text-white" }),
+    s.jsx("a", {
+      href: "mailto:solar@gtrsupply.com",
+      className: "text-white text-sm hover:underline",
+      children: "solar@gtrsupply.com",
     }),
   ],
 }),
@@ -11993,7 +12038,7 @@ const Pm = v.createContext(null),
                 children: [
                   s.jsx("p", {
                     className: "text-white text-sm",
-                    children: "© 2026, GTR Supply. All rights reserved.",
+                    children: "© 2013, GTR Supply. All rights reserved.",
                   }),
                   
                 
@@ -14815,7 +14860,7 @@ const Tx = "/assets/main.png",
                         children: [
                           "Enterprise IT Systems",
                           s.jsx("span", {
-                            className: "block text-[#f2a92a] py-4",
+                            className: "block text-white py-4",
                             children: s.jsx(ux, {
                               sequence: [
                                 "Reliability",
@@ -14847,7 +14892,7 @@ const Tx = "/assets/main.png",
                           s.jsx(F, {
                             to: "/products",
                             className:
-                              "bg-[#748cac] hover:bg-[#f2a92a] text-white px-6 py-3 rounded-md font-semibold",
+                              "bg-[#748cac] hover:bg-[#000000] text-white px-6 py-3 rounded-md font-semibold",
                             children: "Browse Products",
                           }),
                           s.jsxs("a", {
@@ -14855,7 +14900,7 @@ const Tx = "/assets/main.png",
     target: "_blank",
     rel: "noopener noreferrer",
     className:
-      "flex items-center space-x-2 text-blue-100 hover:bg-[#f2a92a] border border-[#f6f8f1] hover:border-0 px-6 py-3 rounded-md font-semibold",
+      "flex items-center space-x-2 text-white bg-[#128C7E] hover:bg-black border border-[#128C7E] hover:border-black px-6 py-3 rounded-md font-semibold",
     children: [
       s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: "w-5 h-5", viewBox: "0 0 24 24", fill: "currentColor", children: s.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" }) }),
       s.jsx("span", { children: "Contact on Whatsapp" }),
@@ -14982,7 +15027,7 @@ const Tx = "/assets/main.png",
                           s.jsx(F, {
                             to: "/",
                             className:
-                              "inline-block border border-[#748cac] rounded-md px-6 py-2 bg-[#193154] text-[#f6f8f1] font-medium hover:bg-[#f2a92a] hover:border-0 transition",
+                              "inline-block border border-[#748cac] rounded-md px-6 py-2 bg-[#193154] text-[#f6f8f1] font-medium hover:bg-[#000000] hover:border-0 transition",
                             children: g.buttonLabel,
                           }),
                         ],
@@ -15008,7 +15053,7 @@ const Tx = "/assets/main.png",
                         children: [
                           "Meet ",
                           s.jsx("span", {
-                            className: "text-[#f2a92a] font-bold",
+                            className: "text-[#000000] font-bold",
                             children: "GTR Supply",
                           }),
                         ],
@@ -15301,7 +15346,7 @@ const Tx = "/assets/main.png",
                   disabled: !e.inStock,
                   className: `w-full flex items-center justify-center space-x-2 py-2.5 px-4 rounded-lg font-medium transition-all duration-200 ${
                     e.inStock
-                      ? "bg-[#132c52] hover:bg-[#f7a414] text-white hover:shadow-lg transform hover:-translate-y-0.5"
+                      ? "bg-[#128C7E] hover:bg-black text-white hover:shadow-lg transform hover:-translate-y-0.5"
                       : "bg-gray-100 text-gray-400 cursor-not-allowed"
                   }`,
                   children: [
@@ -17403,6 +17448,818 @@ const Um = () => [
         "Max Turbo": "3.6 GHz",
       },
     },
+    {
+      id: "rec-375w",
+      name: "REC Solar 375W TwinPeak 2S Mono 72 Series",
+      brand: "REC Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/REC_375.webp",
+      rating: 4.9,
+      reviews: 85,
+      inStock: !0,
+      specifications: { Model: "REC375TP2SM72", Wattage: "375W", Cells: "144", Voltage: "48.0V", Type: "Monocrystalline" },
+    },
+    {
+      id: "jinko-385w",
+      name: "Jinko 385W JKM385M-72HBL-V PERC Diamond Cell",
+      brand: "Jinko",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/Jinko_385.webp",
+      rating: 4.8,
+      reviews: 92,
+      inStock: !0,
+      specifications: { Model: "JKM385M-72HBL-V", Wattage: "385W", Cells: "144", Voltage: "48.4V", Type: "Monocrystalline PERC" },
+    },
+    {
+      id: "qcells-340w",
+      name: "QCELLS 340W Q.PEAK DUO BLK-G6+ All Black",
+      brand: "QCELLS",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/QCELLS_340.webp",
+      rating: 4.7,
+      reviews: 110,
+      inStock: !0,
+      specifications: { Model: "Q.PEAK DUO BLK-G6+ 340", Wattage: "340W", Cells: "120", Voltage: "40.8V", Type: "Monocrystalline" },
+    },
+    {
+      id: "canadian-330w",
+      name: "Canadian Solar 330W HiDM CS1H-330MS",
+      brand: "Canadian Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/CS_330.webp",
+      rating: 4.8,
+      reviews: 76,
+      inStock: !0,
+      specifications: { Model: "CS1H-330MS", Wattage: "330W", Cells: "72", Voltage: "39.8V", Type: "Polycrystalline" },
+    },
+    {
+      id: "hyundai-390w",
+      name: "Hyundai 390W HiS-S390PI Bifacial",
+      brand: "Hyundai",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/HYUNDAI_390.webp",
+      rating: 4.9,
+      reviews: 64,
+      inStock: !0,
+      specifications: { Model: "HiS-S390PI", Wattage: "390W", Cells: "144", Voltage: "48.4V", Type: "Mono-crystalline" },
+    },
+    {
+      id: "sinotec-410w",
+      name: "Sinotec 410W STS-410P-54BB",
+      brand: "Sinotec",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/SINOTEC_410.webp",
+      rating: 4.7,
+      reviews: 53,
+      inStock: !0,
+      specifications: { Model: "STS-410P-54BB", Wattage: "410W", Cells: "108", Voltage: "37.6V", Type: "Monocrystalline PERC" },
+    },
+    {
+      id: "exiom-410w",
+      name: "Exiom 410W EX410-108BMH",
+      brand: "Exiom",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/EXIOM_410.webp",
+      rating: 4.6,
+      reviews: 41,
+      inStock: !0,
+      specifications: { Model: "EX410-108BMH", Wattage: "410W", Cells: "108", Voltage: "37.52V", Type: "Monocrystalline Half-Cut" },
+    },
+    {
+      id: "znshine-400w",
+      name: "ZNShine 400W ZXM7-SH108-400/M",
+      brand: "ZNshine",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/ZNSHINE_400.webp",
+      rating: 4.7,
+      reviews: 38,
+      inStock: !0,
+      specifications: { Model: "ZXM7-SH108-400/M", Wattage: "400W", Cells: "108", Voltage: "40.8V", Type: "Monocrystalline" },
+    },
+    {
+      id: "hyperion-405w",
+      name: "Hyperion Solar 405W HY-DH108P8B",
+      brand: "Hyperion Solar Energy (Runergy)",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/HYPERION_405.webp",
+      rating: 4.8,
+      reviews: 29,
+      inStock: !0,
+      specifications: { Model: "HY-DH108P8B-405", Wattage: "405W", Cells: "108", Voltage: "37.23V", Type: "Monocrystalline P-Type PERC" },
+    },
+    {
+      id: "phonosolartwinplus-550w",
+      name: "PhonoSolar TwinPlus 550W PS550M6H-24/TH",
+      brand: "PhonoSolar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/PHONOSOLARTWINPLUS_550.webp",
+      rating: 4.9,
+      reviews: 47,
+      inStock: !0,
+      specifications: { Model: "PS550M6H-24/TH", Wattage: "550W", Cells: "144", Voltage: "40.8V", Type: "Monocrystalline" },
+    },
+    {
+      id: "philadelphia-solar-580w",
+      name: "Philadelphia Solar 580W Bifacial 144 Cells",
+      brand: "Philadelphia Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/PHILADELPHIASOLAR_580.webp",
+      rating: 4.8,
+      reviews: 33,
+      inStock: !0,
+      specifications: { Model: "PS580-BF-144", Wattage: "580W", Cells: "144", Voltage: "43.15V", Type: "Bifacial N-Type Monocrystalline" },
+    },
+    {
+      id: "phono-590w-draco",
+      name: "Phono 590W Draco N-TOPCON PS590M8GF-24/TNH Solar Panel",
+      brand: "Phono",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/PHONO_590.webp",
+      rating: 4.9,
+      reviews: 55,
+      inStock: !0,
+      specifications: { Model: "PS590M8GF-24/TNH", Wattage: "590W", Cells: "144", Voltage: "43.58V", Type: "N-Type TOPCon Monocrystalline Bifacial" },
+    },
+    {
+      id: "ja-solar-615w-bifacial",
+      name: "JA Solar 615W Bifacial Mono PERC Silver Frame Solar Panel",
+      brand: "JA Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/JASOLAR_615.webp",
+      rating: 4.8,
+      reviews: 61,
+      inStock: !0,
+      specifications: { Model: "JAM66-D45-615LB", Wattage: "615W", Cells: "132", Voltage: "43.58V", Type: "Monocrystalline PERC Bifacial" },
+    },
+    {
+      id: "thornova-620w-tangra",
+      name: "Thornova 620W Tangra L Pro HD N-Type Bifacial Solar Panel",
+      brand: "Thornova",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/THORNOVA_620.webp",
+      rating: 4.7,
+      reviews: 44,
+      inStock: !0,
+      specifications: { Model: "TS-BGT66(620)-G11", Wattage: "620W", Cells: "132", Voltage: "44.6V", Type: "N-Type Monocrystalline Bifacial" },
+    },
+    {
+      id: "hyundai-640w-nj",
+      name: "Hyundai 640W NJ Series N Type TOPCon Solar Panel",
+      brand: "Hyundai",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-panels/HYUNDAI_640.webp",
+      rating: 4.9,
+      reviews: 37,
+      inStock: !0,
+      specifications: { Model: "HiN-T640NJ", Wattage: "640W", Cells: "156", Voltage: "N/A", Type: "N-Type TOPCon Bifacial" },
+    },
+    {
+      id: "enphase-iq8hc",
+      name: "Enphase IQ8HC Microinverter IQ8HC-72-M-DOM-US Made in the USA",
+      brand: "Enphase",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/inverters/ENPHASE_240v.webp",
+      rating: 4.9,
+      reviews: 120,
+      inStock: !0,
+      specifications: { Model: "IQ8HC-72-M-DOM-US", Power: "384VA", Type: "Microinverter" },
+    },
+    {
+      id: "solaredge-u650-optimizer",
+      name: "SolarEdge Power Optimizer 650W 15A 60V U650-1GM4MRMU",
+      brand: "SolarEdge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/inverters/SOLAREDGE.webp",
+      rating: 4.8,
+      reviews: 95,
+      inStock: !0,
+      specifications: { Model: "SolarEdge U650", Power: "650W", Type: "Power Optimizer" },
+    },
+    {
+      id: "solaredge-homehub-7kw",
+      name: "SolarEdge 7KW Home Hub Inverter SE5700H-USMNBE78",
+      brand: "SolarEdge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/inverters/SOLAREDGEHOMEHUB.webp",
+      rating: 4.9,
+      reviews: 78,
+      inStock: !0,
+      specifications: { Model: "SE5700H-USMNBE78", Power: "7kW", Type: "Hybrid Inverter" },
+    },
+    {
+      id: "enphase-iq7hs",
+      name: "Enphase IQ7HS Microinverter IQ7HS-66-M-US",
+      brand: "Enphase",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/inverters/ENPHASEIQ7HS.webp",
+      rating: 4.8,
+      reviews: 67,
+      inStock: !0,
+      specifications: { Model: "EN-IQ7HS-66-M-US", Power: "384VA", Type: "Microinverter" },
+    },
+    {
+      id: "enphase-5kwh-battery",
+      name: "Enphase 5.0 kWh IQ Battery 5P Standalone",
+      brand: "Enphase",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/storage-solutions/ENPHASE_5.0KWh.webp",
+      rating: 4.9,
+      reviews: 54,
+      inStock: !0,
+      specifications: { Model: "B05-C01-US00-1-3", Capacity: "5.0kWh", Type: "Battery" },
+    },
+    {
+      id: "midnite-16kwh-powerflo",
+      name: "MidNite 16 kWh MNPowerflo16 51.2V Wall Mount Battery",
+      brand: "MidNite",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/storage-solutions/MIDNITE16kwh.webp",
+      rating: 4.8,
+      reviews: 42,
+      inStock: !0,
+      specifications: { Model: "MNPowerflo16", Capacity: "16.076kWh", Voltage: "51.2V", Type: "Battery" },
+    },
+    {
+      id: "schneider-10kwh-battery",
+      name: "Schneider 10kWh Electric Boost LFP Battery BAT10K1",
+      brand: "Schneider",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/storage-solutions/SCHNEIDER10kwh.webp",
+      rating: 4.7,
+      reviews: 36,
+      inStock: !0,
+      specifications: { Model: "BAT10K1", Capacity: "10.56kWh", Type: "Battery" },
+    },
+    {
+      id: "fortress-power-18.5kwh",
+      name: "Fortress Power eVault Max 18.5 kWh 48V Lithium Iron Phosphate Battery",
+      brand: "Fortress Power",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/storage-solutions/FORTRESS18.5kwh.webp",
+      rating: 4.9,
+      reviews: 48,
+      inStock: !0,
+      specifications: { Model: "eVault Max 18.5", Capacity: "18.5kWh", Voltage: "51.2V", Type: "Battery" },
+    },
+    {
+      id: "enphase-iq-load-controller",
+      name: "Enphase EP-NA-LK02-040 Accessory IQ Load Controller",
+      brand: "Enphase",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/charge-controllers/ENPHASELOADCONTROLLER.webp",
+      rating: 4.7,
+      reviews: 31,
+      inStock: !0,
+      specifications: { Model: "EP-NA-LK02-040", Type: "Load Controller" },
+    },
+    {
+      id: "schneider-conext-100a",
+      name: "Schneider Conext 865-1034 100A 600VDC MPPT Charge Controller",
+      brand: "Schneider Electric",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/charge-controllers/SCHNEIDERCONTROLLER.webp",
+      rating: 4.8,
+      reviews: 57,
+      inStock: !0,
+      specifications: { Model: "XW-MPPT100-600", Current: "100A", Voltage: "600V", Type: "MPPT Charge Controller" },
+    },
+    {
+      id: "midnite-classic-250",
+      name: "Midnite Solar CLASSIC250 63A 250VDC MPPT Charge Controller",
+      brand: "MidNite Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/charge-controllers/MIDNITECONTROLLER.webp",
+      rating: 4.7,
+      reviews: 43,
+      inStock: !0,
+      specifications: { Model: "CLASSIC 250", Current: "63A", Voltage: "250V", Type: "MPPT Charge Controller" },
+    },
+    {
+      id: "enphase-iq-system-controller-2",
+      name: "Enphase IQ System Controller 2 w/ Neutral-Forming Transformer",
+      brand: "Enphase",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/charge-controllers/ENPHASE_M24.webp",
+      rating: 4.9,
+      reviews: 39,
+      inStock: !0,
+      specifications: { Model: "EN-EP200G101-M240US01", Type: "System Controller" },
+    },
+    {
+      id: "k2-crossrail-44x",
+      name: "K2 Systems SPO CrossRail 44-X 86'' Mill 4000143",
+      brand: "K2 Systems",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/racking/K2_RAIL.webp",
+      rating: 4.8,
+      reviews: 66,
+      inStock: !0,
+      specifications: { Model: "4000143", Material: "6000 Series Aluminum", Length: "86\"", Type: "Racking Rail" },
+    },
+    {
+      id: "ironridge-xr-rail-132a",
+      name: "IronRidge XR RAIL XR-1000-132A 132\" Clear Rail",
+      brand: "IronRidge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/racking/IRONRIDGERAIL.webp",
+      rating: 4.9,
+      reviews: 82,
+      inStock: !0,
+      specifications: { Model: "XR-1000-132A", Material: "Durable Materials", Type: "Clear Rail" },
+    },
+    {
+      id: "ironridge-xr-100-168m",
+      name: "IronRidge Mounting Rail 168 inches (14 ft) XR-100-168M-US",
+      brand: "IronRidge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/racking/IRONRIDGE168.webp",
+      rating: 4.8,
+      reviews: 58,
+      inStock: !0,
+      specifications: { Model: "XR-100-168M-US", Material: "6000-series Aluminum Alloy", Length: "168\"", Type: "Mounting Rail" },
+    },
+    {
+      id: "prosolar-rooftrac-r-172xd",
+      name: "Prosolar RoofTrac R-172XD 172\" Clear Extra Deep Support Rail",
+      brand: "ProSolar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/racking/PROSOLAR172.webp",
+      rating: 4.7,
+      reviews: 35,
+      inStock: !0,
+      specifications: { Model: "R-172XD", Material: "Aluminum", Length: "172\"", Type: "Support Rail" },
+    },
+    {
+      id: "k2-crossrail-44x-185",
+      name: "K2 Systems CrossRail 44-X 185'' Mill 4000721",
+      brand: "K2 Systems",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/racking/K2_185.webp",
+      rating: 4.8,
+      reviews: 41,
+      inStock: !0,
+      specifications: { Model: "4000721", Material: "6000 Series Aluminum", Length: "185\"", Type: "Racking Rail" },
+    },
+    {
+      id: "ironridge-xr1000-210m",
+      name: "IronRidge XR1000 210\" 17.5ft Anodized Rail Mill XR-1000-210M",
+      brand: "IronRidge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/racking/IRONRIDGE_210.webp",
+      rating: 4.9,
+      reviews: 73,
+      inStock: !0,
+      specifications: { Model: "XR-1000-210M", Material: "6000-series Aluminum Alloy", Length: "210\"", Type: "Racking Rail" },
+    },
+    {
+      id: "ironridge-ufo-lft-03-m1",
+      name: "IronRidge UFO LFT-03-M1 Mill Slotted L-foot",
+      brand: "IronRidge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/IRONRIDGELFOOT.webp",
+      rating: 4.8,
+      reviews: 90,
+      inStock: !0,
+      specifications: { Model: "LFT-03-M1", Material: "Aluminum", Type: "L-Foot Mount" },
+    },
+    {
+      id: "unirac-solarmount-304001c",
+      name: "Unirac Solarmount 304001C Clear Serrated L-foot",
+      brand: "Unirac",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/UNIRACLFOOT.webp",
+      rating: 4.7,
+      reviews: 62,
+      inStock: !0,
+      specifications: { Model: "304001C", Material: "Clear", Type: "L-Foot Mount" },
+    },
+    {
+      id: "unirac-solarmount-304001d",
+      name: "Unirac Solarmount 304001D Dark Serrated L-foot",
+      brand: "Unirac",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/UNIRACDLFOOT.webp",
+      rating: 4.7,
+      reviews: 55,
+      inStock: !0,
+      specifications: { Model: "304001D", Material: "Aluminum", Finish: "Dark", Type: "L-Foot Mount" },
+    },
+    {
+      id: "unirac-ecolibrium-ecofoot2-es20207",
+      name: "UNIRAC ECOLIBRIUM ECOFOOT2 ES20207 BALLAST BASE",
+      brand: "Unirac",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/UNIRACBASE.webp",
+      rating: 4.6,
+      reviews: 28,
+      inStock: !0,
+      specifications: { Model: "ES20207", Material: "Durable Metal Alloy", Type: "Ballast Base" },
+    },
+    {
+      id: "s5-versagard-metal-roof-lfoot",
+      name: "S-5-Versagard METAL ROOF L-FOOT",
+      brand: "S-5!",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/VERSAGARDLFOOT.webp",
+      rating: 4.8,
+      reviews: 47,
+      inStock: !0,
+      specifications: { Model: "VersaGard", Type: "Metal Roof L-Foot" },
+    },
+    {
+      id: "snapnrack-ultra-rail-242-01223",
+      name: "Snapnrack Ultra Rail 242-01223 Silver L-foot",
+      brand: "Snapnrack",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/SNAPNRACKLFOOT.webp",
+      rating: 4.7,
+      reviews: 38,
+      inStock: !0,
+      specifications: { Model: "242-01223", Material: "Aluminum", Color: "Silver", Type: "L-Foot Mount" },
+    },
+    {
+      id: "unirac-roofmount-310800",
+      name: "UNIRAC ROOFMOUNT 310800 BALLAST BAY",
+      brand: "UniRac",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/UNIRACROOFMOUNT.webp",
+      rating: 4.8,
+      reviews: 33,
+      inStock: !0,
+      specifications: { Model: "310800", Tilt: "5 degrees", Type: "Rooftop Mount" },
+    },
+    {
+      id: "ironridge-ufo-bhw-tb-02-a1",
+      name: "Ironridge Ufo BHW-TB-02-A1 Mill T-bolt L-foot Bonding Hardware",
+      brand: "IronRidge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/IRONRIDGETBOLT.webp",
+      rating: 4.8,
+      reviews: 51,
+      inStock: !0,
+      specifications: { Model: "BHW-TB-02-A1", Material: "Aluminum", Type: "Bonding Hardware" },
+    },
+    {
+      id: "ecofasten-lfoot-scl-101-blk",
+      name: "EcoFasten L-Foot SCL-101 BLK 3\" 3011018",
+      brand: "EcoFasten",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/mounting/ECOFASTENLFOOT.webp",
+      rating: 4.7,
+      reviews: 29,
+      inStock: !0,
+      specifications: { Model: "3011018", Material: "Aluminum / Stainless steel", Height: "3.00 in", Type: "L-Foot Mount" },
+    },
+    {
+      id: "titan-pv-wire-10awg-red",
+      name: "Titan 01-PV-1019X-SJ-RD-2N 10AWG 1,000' Red PV Wire",
+      brand: "Titan",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-equipment/TITAN.webp",
+      rating: 4.8,
+      reviews: 72,
+      inStock: !0,
+      specifications: { Model: "01-PV-1019X-SJ-RD-2N", Material: "19 Strand Copper", Size: "10AWG", Type: "PV Wire" },
+    },
+    {
+      id: "fronius-dc-connector-kit-part-a",
+      name: "FRONIUS 4,202,014,479 DC CONNECTOR KIT PART A",
+      brand: "Fronius",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-equipment/FRONIUS.webp",
+      rating: 4.6,
+      reviews: 25,
+      inStock: !0,
+      specifications: { Model: "42,0201,4479", Type: "Positive Bus Bar / DC Connector Kit" },
+    },
+    {
+      id: "apsystems-bus-end-cap",
+      name: "APsystems 2060700007 Bus End Cap",
+      brand: "APsystems",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-equipment/APSYSTEMS.webp",
+      rating: 4.7,
+      reviews: 34,
+      inStock: !0,
+      specifications: { Model: "2060700007", Type: "AC Bus Cable End Cap", Compatibility: "YC600 & QS1" },
+    },
+    {
+      id: "generac-snaprs-apke00011",
+      name: "Generac SnapRS APKE00011 Inline Disconnect Switch For Rapid Shut Down",
+      brand: "Generac",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/solar-equipment/GENERAC.webp",
+      rating: 4.8,
+      reviews: 41,
+      inStock: !0,
+      specifications: { Model: "APKE00011", Type: "Inline Disconnect Switch", Compliance: "NEC 690.12" },
+    },
+    {
+      id: "midnite-solar-mneac30-breaker",
+      name: "Midnite Solar MNEAC30 30AMP Ac Din Rail Mount Breaker",
+      brand: "MidNite Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/MIDNITEBREAKER.webp",
+      rating: 4.7,
+      reviews: 56,
+      inStock: !0,
+      specifications: { Model: "MNEAC30", Type: "AC Din Rail Mount Breaker", Current: "30A" },
+    },
+    {
+      id: "midnite-solar-mneac10-breaker",
+      name: "MidNite Solar MNEAC10 10A 120VAC Din Rail Mount Circuit Breaker",
+      brand: "MidNite Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/MIDNITE10a.webp",
+      rating: 4.6,
+      reviews: 38,
+      inStock: !0,
+      specifications: { Model: "MNEAC10", Type: "Din Rail Mount Circuit Breaker", Current: "10A", Voltage: "120VAC" },
+    },
+    {
+      id: "victron-orion-tr-smart-24-12-30a",
+      name: "Victron ORI241236140 Orion-Tr Smart 24/12-30A (360W) DC-DC Converter",
+      brand: "Victron Energy",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/VICTRON30a.webp",
+      rating: 4.9,
+      reviews: 63,
+      inStock: !0,
+      specifications: { Model: "ORI241236140", Power: "360W", Current: "30A", Type: "DC-DC Converter" },
+    },
+    {
+      id: "iota-engineering-agm-smart-controller",
+      name: "Iota Engineering AGM 14.7VDC/29.4VDC 2-Stage Smart Controller",
+      brand: "Iota Engineering",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/IOTA-AGM.webp",
+      rating: 4.7,
+      reviews: 22,
+      inStock: !0,
+      specifications: { Model: "IOTA-AGM", Type: "Smart Controller", Features: "4-Stage Charging, AGM Optimized" },
+    },
+    {
+      id: "sma-rsc-1x-us-10-rapid-shutdown-controller",
+      name: "SMA RSC-1X-US-10 Rapid Shutdown Controller",
+      brand: "SMA",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/SMA_CONTROLLER.webp",
+      rating: 4.8,
+      reviews: 45,
+      inStock: !0,
+      specifications: { Model: "RSC-1X-US-10", Voltage: "600VDC", Type: "Rapid Shutdown Controller", Compliance: "NEC 690.12" },
+    },
+    {
+      id: "midnite-solar-mndc175plus-mini-dc-disconnect",
+      name: "MidNite Solar MNDC175PLUS Mini DC Disconnect PC Plus",
+      brand: "MidNite Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/MIDNITE_DC.webp",
+      rating: 4.7,
+      reviews: 37,
+      inStock: !0,
+      specifications: { Model: "MNDC175PLUS", Voltage: "175V", Current: "175A", Type: "Mini DC Disconnect" },
+    },
+    {
+      id: "midnite-solar-mndc125plus-mini-dc-disconnect",
+      name: "MidNite Solar MNDC125PLUS Mini DC Disconnect PC Plus",
+      brand: "MidNite Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/MIDNITE125.webp",
+      rating: 4.6,
+      reviews: 29,
+      inStock: !0,
+      specifications: { Model: "MNDC125PLUS", Voltage: "125VDC", Current: "125A", Type: "Mini DC Disconnect" },
+    },
+    {
+      id: "staubli-3-foot-mc4-extender-cable",
+      name: "Staubli 3 Foot MC4 Extender Cable UL Certified",
+      brand: "Staubli",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/STAUBLI3.webp",
+      rating: 4.8,
+      reviews: 51,
+      inStock: !0,
+      specifications: { Model: "59014726-0098UL", Length: "3ft", Wire: "10AWG", Type: "MC4 Extender Cable" },
+    },
+    {
+      id: "enphase-en4-to-mc4-adapter-cable",
+      name: "Enphase EN4 to MC4 Adapter Cable 1000 mm",
+      brand: "Enphase",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/ENPHASEADAPTER.webp",
+      rating: 4.7,
+      reviews: 33,
+      inStock: !0,
+      specifications: { Model: "ECA-EN4-S22-10-12", Length: "1000mm", Wire: "12AWG", Type: "Adapter Cable" },
+    },
+    {
+      id: "apsystems-ac-cable-connector-female-40a",
+      name: "APSystems AC Cable Connector Female 40A 10 AWG",
+      brand: "APSystems",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/APSYS_FEMALE.webp",
+      rating: 4.6,
+      reviews: 27,
+      inStock: !0,
+      specifications: { Model: "2301512002", Voltage: "600V", Current: "40A", Type: "AC Connector (Female)" },
+    },
+    {
+      id: "midnite-solar-mnpv4-mc4-combiner-box",
+      name: "Midnite Solar MNPV4-MC4 Combiner Box",
+      brand: "MidNite Solar",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/MIDNITECOMBINER.webp",
+      rating: 4.8,
+      reviews: 44,
+      inStock: !0,
+      specifications: { Model: "MNPV4-MC4", Strings: "4", Type: "Pre-Wired Combiner Box" },
+    },
+    {
+      id: "solaredge-se1000-rsd-s3-b-rapid-shutdown-kit",
+      name: "SolarEdge SE1000-RSD-S3-B Rapid Shutdown Kit",
+      brand: "SolarEdge",
+      price: "0.00",
+      originalPrice: "0.00",
+      condition: "new",
+      category: "solar",
+      image: "https://www.sunsynchardware.com/images/products/accessories/SOLAREDGEKIT.webp",
+      rating: 4.9,
+      reviews: 52,
+      inStock: !0,
+      specifications: { Model: "SE1000-RSD-S3-B", Voltage: "1000VDC", Type: "Rapid Shutdown Kit", Compliance: "NEC 690.12" },
+    },
   ],
   nn = 12,
   Kx = () => {
@@ -17662,7 +18519,7 @@ const Um = () => [
                       s.jsx(
                         F,
                         {
-                          to: `/product/${I.id}`,
+                          to: I.category === "solar" ? `/solar/product/${I.id}` : `/product/${I.id}`,
                           children: s.jsx(Bm, {
                             product: I,
                             viewMode: r,
@@ -17950,7 +18807,7 @@ const Xx = () => {
                               onClick: (ev) => { ev.preventDefault(); ev.stopPropagation(); window.open(`https://wa.me/19453977765?text=${encodeURIComponent(`Hi, I'm interested in ${x.name}`)}`, '_blank'); },
                               disabled: !x.inStock,
                               className:
-                                "flex-1 bg-[#132c52] hover:bg-[#0a4545] disabled:bg-gray-300 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-colors",
+                                "flex-1 bg-[#128C7E] hover:bg-black disabled:bg-gray-300 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center space-x-2 transition-colors",
                                 
                               children: [
                                 s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: "w-5 h-5", viewBox: "0 0 24 24", fill: "currentColor", children: s.jsx("path", { d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" }) }),
@@ -18118,6 +18975,7 @@ function _x(e, t) {
       storage: `Enterprise-class storage solution with excellent reliability and performance. ${r}`,
       processors: `Professional-grade processor designed for demanding workloads and applications. ${r}`,
       Servers: `Enterprise server hardware built for mission-critical applications. ${r}`,
+      solar: `Professional-grade solar equipment including panels, inverters, batteries, racking and accessories. ${r}`,
       default: `Quality hardware component designed for professional use. ${r}`,
     };
   return n[e] || n.default;
@@ -18173,6 +19031,13 @@ function $x(e, t) {
         "Redundant power supplies",
         "Remote management capabilities",
         "Scalable architecture",
+      ],
+      solar: [
+        ...r,
+        "High-efficiency solar panels and inverters",
+        "UL-listed and safety certified",
+        "Manufacturer warranty included",
+        "Compatible with residential and commercial systems",
       ],
     }[e] || r
   );
@@ -18495,7 +19360,7 @@ const ty = () => {
                 s.jsxs(F, {
                   to: "/products",
                   className:
-                    "bg-[#193154] hover:bg-[#f2a92a] text-white font-semibold py-3 px-8 rounded-lg transition-colors inline-flex items-center space-x-2",
+                    "bg-[#193154] hover:bg-[#000000] text-white font-semibold py-3 px-8 rounded-lg transition-colors inline-flex items-center space-x-2",
                   children: [
                     s.jsx("span", { children: "Browse Products" }),
                     s.jsx(Jr, { className: "w-5 h-5" }),
@@ -18667,7 +19532,7 @@ const ty = () => {
                   s.jsx(F, {
                     to: "/register",
                     className:
-                      "text-[#122853] hover:text-[#f2a92a] font-medium",
+                      "text-[#122853] hover:text-[#000000] font-medium",
                     children: "create a new account",
                   }),
                 ],
@@ -18759,7 +19624,7 @@ const ty = () => {
                     type: "submit",
                     disabled: c,
                     className:
-                      "w-full bg-[#193154] hover:bg-[#f2a92a] disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors",
+                      "w-full bg-[#193154] hover:bg-[#000000] disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors",
                     children: c ? "Signing in..." : "Sign In",
                   }),
                 ],
@@ -18879,7 +19744,7 @@ const ty = () => {
                   s.jsx(F, {
                     to: "/login",
                     className:
-                      "text-[#193154] hover:text-[#f2a92a] font-medium",
+                      "text-[#193154] hover:text-[#000000] font-medium",
                     children: "Sign in",
                   }),
                 ],
@@ -19028,7 +19893,7 @@ const ty = () => {
                   type: "submit",
                   disabled: l,
                   className:
-                    "w-full bg-[#193154] hover:bg-[#f2a92a] disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors",
+                    "w-full bg-[#193154] hover:bg-[#000000] disabled:bg-blue-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors",
                   children: l ? "Creating account..." : "Create Account",
                 }),
               ],
@@ -19148,7 +20013,7 @@ const ty = () => {
           value: "2,891",
           change: "+15.3%",
           icon: Ln,
-          color: "text-orange-600",
+          color: "text-gray-900",
         },
       ],
       l = (o) => {
@@ -20333,165 +21198,352 @@ const ty = () => {
       },
       children: [
         s.jsx("h1", {
-          className: "text-3xl font-bold mb-6 text-center",
-          children: "WARRANTY INFO",
+          className: "text-3xl font-bold mb-2 text-center",
+          children: "WARRANTY POLICY",
         }),
-        s.jsx("section", {
-          className: "mb-6",
-          children: s.jsx("p", {
-            children:
-              "Except for the warranties explicitly stated in this document, GTR Supply makes no other representations or warranties, either express or implied, about any products sold. This includes disclaiming any implied warranties of merchantability or fitness for a particular purpose. Any warranties arising from trade usage, the course of dealing, or the course of performance are also expressly disclaimed. GTR Supply serves as a distributor and reseller, not as a manufacturer of the products sold.",
-          }),
+        s.jsx("p", {
+          className: "text-center text-gray-600 mb-8",
+          children: "GTR Supply LLC | Effective Date: April 2026",
         }),
         s.jsxs("section", {
           className: "mb-6",
           children: [
             s.jsx("h2", {
-              className: "font-semibold mb-2",
-              children: "Refurbished Product Warranty:",
-            }),
-            s.jsxs("p", {
-              children: [
-                "All certified refurbished products listed on GTR Supply come with a 90-day replacement policy. If a refund is your preferred route, please note that the warranty coverage is 30 days from the order receiving date. ",
-                s.jsx("em", {
-                  children: "Further details about returns in return section",
-                }),
-              ],
-            }),
-          ],
-        }),
-        s.jsxs("section", {
-          className: "mb-6",
-          children: [
-            s.jsx("h2", {
-              className: "font-semibold mb-2",
-              children: "Manufacturer Warranty:",
-            }),
-            s.jsx("p", {
-              children:
-                "Some products sold at GTR Supply come with 1+ year manufacturer warranty, covering returns, replacements, and support.GTR Supply will pass on these warranties to you, the customer. For any warranty claims or support, please contact the manufacturer directly, following their terms and conditions. Manufacturer warranties may vary by category, and some items cannot be returned once their packaging is opened, like sealed retail boxed items.",
-            }),
-          ],
-        }),
-        s.jsxs("section", {
-          className: "mb-6",
-          children: [
-            s.jsx("h2", {
-              className: "font-semibold mb-2",
-              children: "Service Expectations:",
-            }),
-            s.jsx("p", {
-              children:
-                "You expressly acknowledge that GTR Supply offers no guarantees that its services will: (a) Align with your requirements; (b) Be continuous, prompt, secure, or free from errors; (c) Satisfy your expectations; (d) Correct any software/program errors.",
-            }),
-          ],
-        }),
-        s.jsxs("section", {
-          className: "mb-6",
-          children: [
-            s.jsx("h2", {
-              className: "font-semibold mb-2",
-              children: "User Responsibility:",
-            }),
-            s.jsx("p", {
-              children:
-                "Any materials downloaded or acquired through the use of GTR Supply services are at your sole discretion and risk. You bear complete responsibility for any damage to your computer system or data loss resulting from such activities. No advice or information obtained from GTR Supply, whether oral or written, shall create any warranty not explicitly mentioned in these terms and conditions.",
-            }),
-          ],
-        }),
-        s.jsxs("section", {
-          className: "mb-6",
-          children: [
-            s.jsx("h2", {
-              className: "font-semibold mb-2",
-              children: "Limitation of Liability:",
-            }),
-            s.jsx("p", {
-              children:
-                "Under no circumstances shall GTR Supply be held responsible for any direct, indirect, incidental, special, punitive, or consequential damages, whether resulting from the use, misuse, or inability to use any product purchased from GTR Supply. This applies irrespective of the basis of the liability claim and whether GTR Supply had been advised of the potential for such damages or loss.",
-            }),
-          ],
-        }),
-        s.jsxs("section", {
-          className: "mb-6",
-          children: [
-            s.jsx("h2", {
-              className: "font-semibold mb-2",
-              children: "Exclusions:",
+              className: "text-xl font-semibold mb-3",
+              children: "1. General Warranty Disclaimer",
             }),
             s.jsx("p", {
               className: "mb-2",
               children:
-                "GTR Supply disclaims all responsibility for any personal injuries or property damage, potentially resulting from the use of products/services purchased, including, but not limited to, applications in military, medical, traffic control, and disaster prevention or any related equipment.",
+                "Except for the warranties explicitly stated in this document, GTR Supply LLC makes no other representations or warranties, either express or implied, regarding any products sold. This includes, but is not limited to, disclaiming any implied warranties of merchantability or fitness for a particular purpose. Any warranties arising from trade usage, course of dealing, or course of performance are expressly disclaimed.",
             }),
-            s.jsxs("ul", {
-              className: "list-decimal list-inside pl-4",
-              children: [
-                s.jsx("li", {
-                  children: "Missing memory or flash cards resulting in faults",
-                }),
-                s.jsx("li", {
-                  children:
-                    "Software-related issues (which will incur additional charges)",
-                }),
-                s.jsx("li", {
-                  children: "Any customer-induced damage or alterations",
-                }),
-                s.jsx("li", {
-                  children: "Parts not supplied by  GTR Supply",
-                }),
-                s.jsx("li", {
-                  children: "Misuse, unauthorized repairs, or modifications",
-                }),
-                s.jsx("li", {
-                  children:
-                    "Natural or human-made disasters affecting the product",
-                }),
-                s.jsx("li", {
-                  children:
-                    "Malfunctions due to unauthorized or self-compiled software",
-                }),
-                s.jsx("li", {
-                  children:
-                    "Virus infections because of inadequate maintenance",
-                }),
-                s.jsx("li", {
-                  children: "Issues due to non-standard expansion cards",
-                }),
-              ],
+            s.jsx("p", {
+              children:
+                "GTR Supply LLC operates as a distributor and reseller of IT hardware and electronic components. GTR Supply is not the original manufacturer of the products sold and does not assume manufacturer obligations unless explicitly stated.",
             }),
           ],
-        }),
-        s.jsx("section", {
-          className: "mb-6",
-          children: s.jsx("p", {
-            children:
-              "Please report any damages that occurred during transit within 2 working days of delivery, and provide pictures as documentation. All valid claims will be processed upon receipt of the returned component(s). Maintain the warranty card along with a copy of the invoice for all warranty claims.",
-          }),
         }),
         s.jsxs("section", {
+          className: "mb-6",
           children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "2. Refurbished Product Warranty",
+            }),
             s.jsx("p", {
-              className: "mb-1 font-semibold",
+              className: "mb-3",
               children:
-                "For more information or if you have questions, you can reach us at:",
+                "All certified refurbished products sold by GTR Supply LLC are covered under the following warranty terms:",
             }),
-            s.jsx("p", {
-              className: "mb-1",
-              children: "Telephone: +1 737 210 4824",
-            }),
-            s.jsxs("p", {
+            s.jsxs("div", {
+              className: "pl-4",
               children: [
-                "Email:",
-                " ",
-                s.jsx("a", {
-                  href: "mailto:",
-                  className: "text-blue-600 underline",
-                  children: "",
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "Replacement Warranty (90 Days): " }),
+                    "If a product is found to be defective or non-functional within 90 days of delivery, GTR Supply will provide a replacement unit of equal or comparable specification at no additional cost.",
+                  ],
+                }),
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "Refund Warranty (30 Days): " }),
+                    "If a refund is preferred over a replacement, the request must be submitted within 30 days of the order receiving date. Refunds are processed to the original payment method.",
+                  ],
+                }),
+                s.jsxs("p", {
+                  children: [
+                    s.jsx("strong", { children: "DOA (Dead on Arrival): " }),
+                    "Products that are non-functional upon receipt must be reported within 5 business days of delivery with supporting documentation (photos and/or test results). DOA claims will be prioritized for immediate replacement or full refund.",
+                  ],
                 }),
               ],
             }),
           ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "3. Manufacturer Warranty",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "Certain products sold by GTR Supply may carry an active manufacturer warranty of one year or more, covering returns, replacements, and technical support directly through the original manufacturer.",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "GTR Supply will pass through all applicable manufacturer warranties to the customer. For any warranty claims covered by the manufacturer, the customer should contact the manufacturer directly in accordance with the manufacturer's terms and conditions.",
+            }),
+            s.jsx("p", {
+              children:
+                "Manufacturer warranty terms may vary by product category. Certain items, including factory-sealed retail boxed products, may not be eligible for return once the original packaging has been opened.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "4. What Is Covered",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "The GTR Supply warranty covers the following:",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4",
+              children: [
+                s.jsx("li", { children: "Hardware defects present at the time of sale" }),
+                s.jsx("li", { children: "Components that fail under normal operating conditions within the warranty period" }),
+                s.jsx("li", { children: "Dead on Arrival (DOA) units reported within 5 business days of delivery" }),
+                s.jsx("li", { children: "Products that do not match the listed specifications or description at the time of purchase" }),
+              ],
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "5. What Is Not Covered (Exclusions)",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "The following are expressly excluded from warranty coverage:",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4",
+              children: [
+                s.jsx("li", { children: "Customer-induced damage, physical abuse, or unauthorized alterations" }),
+                s.jsx("li", { children: "Damage caused by misuse, negligence, accident, or improper installation" }),
+                s.jsx("li", { children: "Software-related issues, including OS errors, driver conflicts, or firmware corruption" }),
+                s.jsx("li", { children: "Missing memory modules, flash cards, or storage media resulting from customer handling" }),
+                s.jsx("li", { children: "Parts or components not originally supplied by GTR Supply" }),
+                s.jsx("li", { children: "Unauthorized repairs or modifications performed by third parties" }),
+                s.jsx("li", { children: "Damage from natural disasters, power surges, flooding, fire, or force majeure events" }),
+                s.jsx("li", { children: "Malfunctions caused by unauthorized, unlicensed, or self-compiled software" }),
+                s.jsx("li", { children: "Virus infections or malware resulting from inadequate system maintenance" }),
+                s.jsx("li", { children: "Issues from non-standard or incompatible expansion cards, peripherals, or accessories" }),
+                s.jsx("li", { children: "Products used in high-risk applications: military, medical, aviation, traffic control, disaster prevention, or life-support systems" }),
+              ],
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "6. Shipping Damage Claims",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "All products are carefully packaged and inspected prior to shipment. In the event of transit damage:",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4 mb-3",
+              children: [
+                s.jsx("li", { children: "Report any shipping damage within 2 business days of delivery" }),
+                s.jsx("li", { children: "Provide photographs documenting the damage to both packaging and product" }),
+                s.jsx("li", { children: "Do not discard original packaging material until the claim is resolved" }),
+                s.jsx("li", { children: "Valid shipping damage claims will be processed upon receipt and inspection of returned item(s)" }),
+              ],
+            }),
+            s.jsx("p", {
+              children:
+                "GTR Supply is not liable for damage caused by third-party carriers after products leave our facility, but we will assist in filing carrier claims on your behalf when applicable.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "7. How to File a Warranty Claim",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "To initiate a warranty claim, please follow these steps:",
+            }),
+            s.jsxs("div", {
+              className: "pl-4",
+              children: [
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "Step 1: " }),
+                    "Contact GTR Supply warranty support at ",
+                    s.jsx("a", { href: "mailto:warranty@gtrsupply.com", className: "text-blue-600 underline", children: "warranty@gtrsupply.com" }),
+                    " or call ",
+                    s.jsx("a", { href: "tel:+17372104824", className: "text-blue-600 underline", children: "(737) 210-4824" }),
+                    ".",
+                  ],
+                }),
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "Step 2: " }),
+                    "Provide your original invoice number, product details, and a description of the issue.",
+                  ],
+                }),
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "Step 3: " }),
+                    "Include photographs or test results supporting the defect or failure.",
+                  ],
+                }),
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "Step 4: " }),
+                    "A GTR Supply representative will review your claim and provide an RMA (Return Merchandise Authorization) number within 2 business days.",
+                  ],
+                }),
+                s.jsxs("p", {
+                  children: [
+                    s.jsx("strong", { children: "Step 5: " }),
+                    "Ship the defective product back to GTR Supply using the provided RMA number. Do not return any product without an authorized RMA number.",
+                  ],
+                }),
+              ],
+            }),
+            s.jsx("p", {
+              className: "mt-3 italic",
+              children: "Please retain your warranty card (if provided) along with a copy of the original invoice for all warranty claims.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "8. Service Expectations",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "The customer acknowledges that GTR Supply LLC makes no guarantees that its services will:",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4 mb-3",
+              children: [
+                s.jsx("li", { children: "Fully align with every specific customer requirement" }),
+                s.jsx("li", { children: "Be continuous, uninterrupted, or free from errors at all times" }),
+                s.jsx("li", { children: "Meet every individual expectation in all circumstances" }),
+              ],
+            }),
+            s.jsx("p", {
+              children: "No advice or information obtained from GTR Supply, whether oral or written, shall create any warranty not explicitly stated in this document.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "9. User Responsibility",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "The customer assumes full responsibility for the selection, use, and application of all products purchased from GTR Supply. Any materials downloaded, installed, or acquired through the use of products sold by GTR Supply are at the customer's sole discretion and risk.",
+            }),
+            s.jsx("p", {
+              children:
+                "The customer bears complete responsibility for any damage to computer systems, data loss, or operational disruptions resulting from the use of products purchased from GTR Supply.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "10. Limitation of Liability",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "Under no circumstances shall GTR Supply LLC be held responsible for any direct, indirect, incidental, special, punitive, or consequential damages resulting from the use, misuse, or inability to use any product purchased from GTR Supply.",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "This limitation applies regardless of the basis of the liability claim (contract, tort, negligence, strict liability, or otherwise) and whether or not GTR Supply had been advised of the potential for such damages or loss.",
+            }),
+            s.jsx("p", {
+              children:
+                "In all cases, GTR Supply's maximum liability shall not exceed the original purchase price of the product in question.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6 bg-gray-50 p-6 rounded-lg",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "Contact Us",
+            }),
+            s.jsx("p", {
+              className: "mb-3",
+              children: "For warranty claims, questions, or support:",
+            }),
+            s.jsx("p", {
+              className: "font-semibold",
+              children: "GTR Supply LLC",
+            }),
+            s.jsxs("p", {
+              className: "mb-1",
+              children: [
+                "Email: ",
+                s.jsx("a", {
+                  href: "mailto:warranty@gtrsupply.com",
+                  className: "text-blue-600 underline",
+                  children: "warranty@gtrsupply.com",
+                }),
+              ],
+            }),
+            s.jsxs("p", {
+              className: "mb-1",
+              children: [
+                "Phone: ",
+                s.jsx("a", {
+                  href: "tel:+17372104824",
+                  className: "text-blue-600 underline",
+                  children: "(737) 210-4824",
+                }),
+              ],
+            }),
+            s.jsxs("p", {
+              className: "mb-1",
+              children: [
+                "Web: ",
+                s.jsx("a", {
+                  href: "https://www.gtrsupply.com",
+                  className: "text-blue-600 underline",
+                  children: "www.gtrsupply.com",
+                }),
+              ],
+            }),
+            s.jsx("p", {
+              className: "mt-3 text-gray-600",
+              children: "GTR Supply LLC | 53571 Far West Blvd, Austin, TX 78731 | www.gtrsupply.com",
+            }),
+          ],
+        }),
+        s.jsx("p", {
+          className: "text-sm text-gray-500 text-center italic",
+          children: "This warranty policy is subject to change without prior notice. The most current version is available upon request.",
         }),
       ],
     }),
@@ -21026,7 +22078,7 @@ const
                     s.jsx("a", {
                       href: "tel:+17575781088",
                       className:
-                        "inline-block border border-orange-400 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-orange-100 transition",
+                        "inline-block border border-gray-800 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-gray-100 transition",
                       children: "+1 737 210 4824 Â»",
                     }),
                   ],
@@ -21042,7 +22094,7 @@ const
                     s.jsx("a", {
                       href: "mailto:",
                       className:
-                        "inline-block border border-orange-400 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-orange-100 transition",
+                        "inline-block border border-gray-800 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-gray-100 transition",
                       children: "Email Us Â»",
                     }),
                   ],
@@ -21058,7 +22110,7 @@ const
                     s.jsx("a", {
                       href: "mailto:",
                       className:
-                        "inline-block border border-orange-400 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-orange-100 transition",
+                        "inline-block border border-gray-800 text-gray-800 px-4 py-2 rounded-md text-sm hover:bg-gray-100 transition",
                       children: " Â»",
                     }),
                   ],
@@ -21508,32 +22560,46 @@ const
                   className: "text-2xl font-semibold mb-2 text-black-600",
                   children: "CONTACT US",
                 }),
-                s.jsx("address", {
-                  className: "not-italic leading-relaxed",
-                  children: s.jsxs("p", {
-                    children: [
-                      "If you have questions about this Privacy Policy, please contact us at:",
-                      s.jsx("br", {}),
-                      s.jsx("strong", { children: "Phone:" }),
-                      " 1 757 578 1088",
-                      s.jsx("br", {}),
-                      s.jsx("strong", { children: "Email:" }),
-                      " ",
-                      s.jsx("a", {
-                        href: "mailto:",
-                        className: "text-blue-600 underline",
-                        children: "",
-                      }),
-                      s.jsx("br", {}),
-                      s.jsx("strong", { children: "Website:" }),
-                      " ",
-                      s.jsx("a", {
-                        href: "https://gtrsupply.com",
-                        className: "text-blue-600 underline",
-                        children: "gtrsupply.com",
-                      }),
-                    ],
-                  }),
+                s.jsxs("div", {
+                  className: "bg-gray-50 p-6 rounded-lg",
+                  children: [
+                    s.jsx("p", {
+                      className: "mb-3",
+                      children: "If you have questions about this Privacy Policy, please contact us at:",
+                    }),
+                    s.jsxs("p", {
+                      className: "mb-1",
+                      children: [
+                        s.jsx("strong", { children: "Phone: " }),
+                        s.jsx("a", {
+                          href: "tel:+17372104842",
+                          className: "text-blue-600 underline",
+                          children: "+1(737)210-4842",
+                        }),
+                      ],
+                    }),
+                    s.jsxs("p", {
+                      className: "mb-1",
+                      children: [
+                        s.jsx("strong", { children: "Email: " }),
+                        s.jsx("a", {
+                          href: "mailto:PrivatePolicy@gtrsupply.com",
+                          className: "text-blue-600 underline",
+                          children: "PrivatePolicy@gtrsupply.com",
+                        }),
+                      ],
+                    }),
+                    s.jsxs("p", {
+                      children: [
+                        s.jsx("strong", { children: "Website: " }),
+                        s.jsx("a", {
+                          href: "https://gtrsupply.com",
+                          className: "text-blue-600 underline",
+                          children: "gtrsupply.com",
+                        }),
+                      ],
+                    }),
+                  ],
                 }),
               ],
             }),
@@ -21682,25 +22748,24 @@ const
                   className: "text-2xl font-semibold mb-2 text-black-600",
                   children: "CONTACT US",
                 }),
-                s.jsx("address", {
-                  className: "not-italic leading-relaxed",
-                  children: s.jsxs("p", {
-                    children: [
-                      "For questions or concerns, contact us at:",
-                      s.jsx("br", {}),
-                      s.jsx("strong", { children: "Phone:" }),
-                      " 1 757 578 1088",
-                      s.jsx("br", {}),
-                      s.jsx("strong", { children: "Email:" }),
-                      " ",
-                      s.jsx("a", {
-                        href: "mailto:",
-                        className: "text-blue-600 underline",
-                        children: "",
-                      }),
-                      s.jsx("br", {}),
-                    ],
-                  }),
+                s.jsxs("div", {
+                  className: "bg-gray-50 p-6 rounded-lg",
+                  children: [
+                    s.jsx("p", {
+                      className: "mb-3",
+                      children: "For questions or concerns, contact us at:",
+                    }),
+                    s.jsxs("p", {
+                      children: [
+                        s.jsx("strong", { children: "Phone: " }),
+                        s.jsx("a", {
+                          href: "tel:+17372104842",
+                          className: "text-blue-600 underline",
+                          children: "+1(737)210-4842",
+                        }),
+                      ],
+                    }),
+                  ],
                 }),
               ],
             }),
@@ -21719,265 +22784,349 @@ const wy = () =>
       },
       children: [
         s.jsx("h1", {
-          className: "text-3xl font-bold mb-6 text-center",
+          className: "text-3xl font-bold mb-2 text-center",
           children: "RETURN POLICY",
+        }),
+        s.jsx("p", {
+          className: "text-center text-gray-600 mb-8",
+          children: "GTR Supply LLC | Effective Date: April 2026",
         }),
         s.jsx("section", {
           className: "mb-6",
           children: s.jsx("p", {
             children:
-              "Thank you for your purchase. We hope you are happy with your purchase. However, if you are not completely satisfied with your purchase for any reason, you may return it to us for a full refund or an exchange. Please see below for more information on our return policy.",
+              "Thank you for your purchase. We hope you are happy with your order. However, if you are not completely satisfied with your purchase for any reason, you may return it to us for a full refund or an exchange, subject to the terms outlined below.",
           }),
         }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "RETURNS & REFUNDS",
-        }),
-        s.jsx("p", {
-          className: "mb-4",
-          children:
-            "We are committed to delivering top-notch quality and value. If you are unsatisfied with your purchase, you can return the product for a full refund or exchange, provided it meets the following conditions:",
-        }),
-        s.jsxs("ul", {
-          className: "list-disc list-inside mb-6",
+        s.jsxs("section", {
+          className: "mb-6",
           children: [
-            s.jsx("li", {
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "1. Returns & Refunds",
+            }),
+            s.jsx("p", {
+              className: "mb-3",
               children:
-                "The product must be unused, in its original condition and packaging",
+                "We are committed to delivering top-notch quality and value. If you are unsatisfied with your purchase, you can return the product for a full refund or exchange, provided it meets the following conditions:",
             }),
-            s.jsx("li", {
-              children: "All original tags and labels must be intact",
-            }),
-            s.jsx("li", {
-              children:
-                "Used or customer-damaged products are not eligible for a refund",
-            }),
-          ],
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "RETURN PROCESS",
-        }),
-        s.jsx("p", { className: "mb-4", children: "To initiate a return:" }),
-        s.jsxs("ul", {
-          className: "list-disc list-inside mb-6",
-          children: [
-            s.jsxs("li", {
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4",
               children: [
-                "Complete the RMA form or email ",
-                s.jsx("a", {
-                  href: "mailto:",
-                  className: "text-blue-600 underline",
-                  children: "",
-                }),
-                " to request a Return Merchandise Authorization (RMA) number.",
+                s.jsx("li", { children: "The product must be unused, in its original condition and packaging" }),
+                s.jsx("li", { children: "All original tags and labels must be intact" }),
+                s.jsx("li", { children: "Used or customer-damaged products are not eligible for a refund" }),
+                s.jsx("li", { children: "Returns must be postmarked within 30 days of the purchase date" }),
+                s.jsx("li", { children: "Product must be in unused and original condition with all original packaging included" }),
               ],
             }),
-            s.jsx("li", {
-              children:
-                "After receiving the RMA number, securely package the item along with proof of purchase.",
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "2. Return Process",
             }),
-            s.jsx("li", { children: "Ship the item to:" }),
-            s.jsxs("div", {
-              className: "ml-6 my-2",
+            s.jsx("p", {
+              className: "mb-3",
+              children: "To initiate a return, please follow these steps:",
+            }),
+            s.jsxs("ol", {
+              className: "list-decimal list-inside pl-4 mb-4",
               children: [
-                s.jsx("p", { children: "GTR Supply" }),
-                s.jsx("p", { children: "Attn: Returns, RMA #" }),
-                s.jsx("p", { children: "1800 W Hawthorne Lane" }),
-                s.jsx("p", { children: "Ste Q1" }),
-                s.jsx("p", { children: "West Chicago IL 60185" }),
-              ],
-            }),
-            s.jsx("li", {
-              children: "Customers are responsible for return shipping costs",
-            }),
-            s.jsx("li", {
-              children:
-                "Use a trackable shipping method to ensure the safe return of your package",
-            }),
-            s.jsx("li", {
-              children:
-                "Once received and inspected, a refund will be issued within 10 business days",
-            }),
-          ],
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "RETURN POLICY",
-        }),
-        s.jsxs("ul", {
-          className: "list-disc list-inside mb-6",
-          children: [
-            s.jsx("li", {
-              children:
-                "Returns must be postmarked within 30 days of the purchase date",
-            }),
-            s.jsx("li", {
-              children: "Include all original tags, labels, and packaging",
-            }),
-            s.jsx("li", {
-              children: "Product must be in unused and original condition",
-            }),
-          ],
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "REFUND POLICY",
-        }),
-        s.jsx("p", {
-          className: "mb-6",
-          children:
-            "Refunds or exchanges are processed within 10 business days after the returned item is received and inspected. Customers will receive email notifications upon completion.",
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "CANCELLATION POLICY",
-        }),
-        s.jsx("p", {
-          className: "mb-6",
-          children:
-            "Orders cannot be canceled once they are processed or shipped. If you cancel before processing, a 15% cancellation fee will apply to cover restocking and refund charges.",
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "LATE OR MISSING REFUNDS",
-        }),
-        s.jsxs("ul", {
-          className: "list-disc list-inside mb-6",
-          children: [
-            s.jsx("li", {
-              children: "Check your bank account and transaction history",
-            }),
-            s.jsx("li", {
-              children:
-                "Contact your credit card provider and bank, as processing times may vary",
-            }),
-            s.jsx("li", {
-              children:
-                "Credit card companies can take up to 30 days to post refunds",
-            }),
-            s.jsx("li", {
-              children:
-                "If the refund is still not received, contact us for assistance",
-            }),
-          ],
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "DELIVERY INFORMATION",
-        }),
-        s.jsxs("p", {
-          className: "mb-6",
-          children: [
-            "Orders ship within 2 to 5 business days. If your order does not arrive within the estimated delivery window, please contact us at ",
-            s.jsx("a", {
-              href: "mailto:",
-              className: "text-blue-600 underline",
-              children: "",
-            }),
-            ".",
-            s.jsx("br", {}),
-            s.jsx("br", {}),
-            "Delays caused by incorrect shipping details or missed deliveries are excluded from this timeframe.",
-          ],
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "TRACKING INFORMATION",
-        }),
-        s.jsx("p", {
-          className: "mb-6",
-          children:
-            "Tracking numbers will be emailed to customers once available.",
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "ADDRESS ERRORS",
-        }),
-        s.jsx("p", {
-          className: "mb-6",
-          children:
-            "If you entered the wrong shipping address, email us immediately. While we will try to assist, changes cannot be guaranteed after the order is processed or shipped. Incorrect shipping details are the customerâ€™s responsibility.",
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "INVALID REASONS FOR RETURN / DENIAL OF REPLACEMENT",
-        }),
-        s.jsxs("ul", {
-          className: "list-disc list-inside mb-6",
-          children: [
-            s.jsx("li", {
-              children:
-                "Change of mind: Orders cannot be returned for this reason",
-            }),
-            s.jsx("li", {
-              children:
-                "Found a lower price elsewhere: Price comparisons must be made before ordering",
-            }),
-            s.jsx("li", {
-              children:
-                "Non-matching RMA details: Items must match the RMA form",
-            }),
-            s.jsx("li", {
-              children: "Tampered or damaged products are not eligible",
-            }),
-          ],
-        }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "EXCEPTIONS",
-        }),
-        s.jsx("p", {
-          className: "mb-2",
-          children: "For defective or damaged products:",
-        }),
-        s.jsx("ul", {
-          className: "list-disc list-inside mb-4",
-          children: s.jsx("li", {
-            children: "Contact us for a refund or exchange",
-          }),
-        }),
-        s.jsx("p", { className: "mb-2", children: "Restocking fees apply:" }),
-        s.jsxs("ul", {
-          className: "list-disc list-inside mb-6",
-          children: [
-            s.jsx("li", { children: "25% for most returns" }),
-            s.jsxs("li", {
-              children: [
-                "50% for returns with:",
-                s.jsxs("ul", {
-                  className: "list-disc list-inside ml-6",
+                s.jsxs("li", {
                   children: [
-                    s.jsx("li", { children: "Missing or replaced components" }),
-                    s.jsx("li", {
-                      children:
-                        "Items found functional after being reported defective",
-                    }),
-                    s.jsx("li", { children: "Post-warranty RMA eligibility" }),
-                    s.jsx("li", { children: "Damaged or tampered packaging" }),
+                    "Complete the RMA form or email ",
+                    s.jsx("a", { href: "mailto:return@gtrsupply.com", className: "text-blue-600 underline", children: "return@gtrsupply.com" }),
+                    " to request a Return Merchandise Authorization (RMA) number.",
+                  ],
+                }),
+                s.jsx("li", { children: "After receiving the RMA number, securely package the item along with proof of purchase." }),
+                s.jsx("li", { children: "Ship the item to the address below." }),
+                s.jsx("li", { children: "Use a trackable shipping method to ensure the safe return of your package." }),
+                s.jsx("li", { children: "Customers are responsible for return shipping costs unless the return is due to a GTR Supply error." }),
+              ],
+            }),
+            s.jsxs("div", {
+              className: "bg-gray-50 p-4 rounded-lg mb-3",
+              children: [
+                s.jsx("p", { className: "font-semibold mb-2", children: "Ship Returns To:" }),
+                s.jsx("p", { children: "GTR Supply LLC" }),
+                s.jsx("p", { children: "53571 Far West Blvd" }),
+                s.jsx("p", { children: "Austin, TX 78731" }),
+                s.jsx("p", { children: "United States" }),
+              ],
+            }),
+            s.jsx("p", {
+              className: "italic",
+              children: "Once received and inspected, a refund will be issued within 10 business days.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "3. Refund Policy",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "Refunds or exchanges are processed within 10 business days after the returned item is received and inspected. Customers will receive email notifications upon completion of the refund process.",
+            }),
+            s.jsx("p", {
+              children:
+                "Refunds will be issued to the original payment method. Please allow additional time for your bank or credit card provider to process and post the refund to your account.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "4. Cancellation Policy",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "Orders cannot be canceled once they have been processed or shipped. If you cancel before the order is processed, a 15% cancellation fee will apply to cover restocking and processing charges.",
+            }),
+            s.jsxs("p", {
+              children: [
+                "To request a cancellation, contact us immediately at ",
+                s.jsx("a", { href: "mailto:return@gtrsupply.com", className: "text-blue-600 underline", children: "return@gtrsupply.com" }),
+                " or call ",
+                s.jsx("a", { href: "tel:+17372104824", className: "text-blue-600 underline", children: "(737) 210-4824" }),
+                ". Cancellation requests are subject to order status at the time of receipt.",
+              ],
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "5. Late or Missing Refunds",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "If you have not received your refund within the expected timeframe, please take the following steps:",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4",
+              children: [
+                s.jsx("li", { children: "Check your bank account and recent transaction history" }),
+                s.jsx("li", { children: "Contact your credit card provider or bank, as processing times may vary by institution" }),
+                s.jsx("li", { children: "Credit card companies may take up to 30 days to post refunds to your statement" }),
+                s.jsxs("li", {
+                  children: [
+                    "If the refund is still not received after these steps, contact us at ",
+                    s.jsx("a", { href: "mailto:return@gtrsupply.com", className: "text-blue-600 underline", children: "return@gtrsupply.com" }),
+                    " for assistance",
                   ],
                 }),
               ],
             }),
           ],
         }),
-        s.jsx("h2", {
-          className: "text-xl font-semibold mb-2",
-          children: "CONTACT INFORMATION",
-        }),
-        s.jsx("p", {
-          className: "mb-1",
-          children: "Phone: +1 737 210 4824",
-        }),
-        s.jsxs("p", {
+        s.jsxs("section", {
+          className: "mb-6",
           children: [
-            "Email: ",
-            s.jsx("a", {
-              href: "mailto:",
-              className: "text-blue-600 underline",
-              children: "",
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "6. Delivery Information",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children:
+                "Orders typically ship within 2 to 5 business days from the date of payment confirmation. If your order does not arrive within the estimated delivery window, please contact us for a status update.",
+            }),
+            s.jsx("p", {
+              className: "mb-3",
+              children:
+                "Delays caused by incorrect shipping details provided by the customer or missed deliveries by the carrier are excluded from the estimated delivery timeframe.",
+            }),
+            s.jsx("h3", {
+              className: "font-semibold mb-2",
+              children: "Tracking Information",
+            }),
+            s.jsx("p", {
+              children:
+                "Tracking numbers will be emailed to customers once available. Please allow 24 to 48 hours for tracking information to update after shipment.",
             }),
           ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "7. Address Errors",
+            }),
+            s.jsxs("p", {
+              className: "mb-2",
+              children: [
+                "If you entered an incorrect shipping address, email us immediately at ",
+                s.jsx("a", { href: "mailto:return@gtrsupply.com", className: "text-blue-600 underline", children: "return@gtrsupply.com" }),
+                ". While we will make every effort to assist, changes cannot be guaranteed after the order has been processed or shipped.",
+              ],
+            }),
+            s.jsx("p", {
+              children:
+                "Incorrect shipping details are the customer's responsibility. GTR Supply is not liable for orders delivered to an incorrect address provided by the customer.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "8. Invalid Reasons for Return / Denial of Replacement",
+            }),
+            s.jsx("p", {
+              className: "mb-2",
+              children: "The following are not valid reasons for a return and will result in denial of the return request:",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4",
+              children: [
+                s.jsxs("li", { children: [s.jsx("strong", { children: "Change of mind: " }), "Orders cannot be returned simply because the customer changed their mind"] }),
+                s.jsxs("li", { children: [s.jsx("strong", { children: "Found a lower price elsewhere: " }), "Price comparisons must be made before placing the order"] }),
+                s.jsxs("li", { children: [s.jsx("strong", { children: "Non-matching RMA details: " }), "Returned items must match the information provided on the RMA form"] }),
+                s.jsx("li", { children: "Tampered, altered, or customer-damaged products are not eligible for return or replacement" }),
+                s.jsx("li", { children: "Products returned without a valid RMA number will be refused" }),
+              ],
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "9. Exceptions & Restocking Fees",
+            }),
+            s.jsx("p", {
+              className: "mb-3",
+              children:
+                "For defective or damaged products received from GTR Supply, please contact us immediately for a refund or exchange. The following restocking fees apply:",
+            }),
+            s.jsxs("div", {
+              className: "pl-4 mb-3",
+              children: [
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "25% Restocking Fee: " }),
+                    "Applies to most standard returns that meet the return eligibility criteria.",
+                  ],
+                }),
+                s.jsxs("p", {
+                  className: "mb-2",
+                  children: [
+                    s.jsx("strong", { children: "50% Restocking Fee: " }),
+                    "Applies to returns involving any of the following:",
+                  ],
+                }),
+                s.jsxs("ul", {
+                  className: "list-disc list-inside pl-4",
+                  children: [
+                    s.jsx("li", { children: "Missing or replaced components" }),
+                    s.jsx("li", { children: "Items reported as defective but found to be fully functional upon inspection" }),
+                    s.jsx("li", { children: "Post-warranty RMA eligibility claims" }),
+                    s.jsx("li", { children: "Damaged or tampered packaging" }),
+                  ],
+                }),
+              ],
+            }),
+            s.jsx("p", {
+              className: "italic",
+              children:
+                "GTR Supply reserves the right to inspect all returned items and adjust the restocking fee based on the condition of the returned product.",
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "10. Important Notes",
+            }),
+            s.jsxs("ul", {
+              className: "list-disc list-inside pl-4",
+              children: [
+                s.jsx("li", { children: "All returns must include a valid RMA number. Returns without an RMA will not be accepted." }),
+                s.jsx("li", { children: "GTR Supply is not responsible for items lost or damaged during return shipping. We strongly recommend using insured, trackable shipping for all returns." }),
+                s.jsx("li", { children: "Refurbished products are subject to the separate Warranty Policy terms (see GTR Supply Warranty Policy document)." }),
+                s.jsx("li", { children: "This return policy is subject to change without prior notice. The most current version is available upon request." }),
+              ],
+            }),
+          ],
+        }),
+        s.jsxs("section", {
+          className: "mb-6 bg-gray-50 p-6 rounded-lg",
+          children: [
+            s.jsx("h2", {
+              className: "text-xl font-semibold mb-3",
+              children: "Contact Us",
+            }),
+            s.jsx("p", {
+              className: "mb-3",
+              children: "For return requests, questions, or support:",
+            }),
+            s.jsx("p", {
+              className: "font-semibold",
+              children: "GTR Supply LLC",
+            }),
+            s.jsxs("p", {
+              className: "mb-1",
+              children: [
+                "Email: ",
+                s.jsx("a", {
+                  href: "mailto:return@gtrsupply.com",
+                  className: "text-blue-600 underline",
+                  children: "return@gtrsupply.com",
+                }),
+              ],
+            }),
+            s.jsxs("p", {
+              className: "mb-1",
+              children: [
+                "Phone: ",
+                s.jsx("a", {
+                  href: "tel:+17372104824",
+                  className: "text-blue-600 underline",
+                  children: "(737) 210-4824",
+                }),
+              ],
+            }),
+            s.jsxs("p", {
+              className: "mb-1",
+              children: [
+                "Web: ",
+                s.jsx("a", {
+                  href: "https://www.gtrsupply.com",
+                  className: "text-blue-600 underline",
+                  children: "www.gtrsupply.com",
+                }),
+              ],
+            }),
+            s.jsx("p", {
+              className: "mt-3 text-gray-600",
+              children: "GTR Supply LLC | 53571 Far West Blvd, Austin, TX 78731 | www.gtrsupply.com",
+            }),
+          ],
+        }),
+        s.jsx("p", {
+          className: "text-sm text-gray-500 text-center italic",
+          children: "This return policy is subject to change without prior notice. The most current version is available upon request.",
         }),
       ],
     }),
@@ -22309,6 +23458,376 @@ const tt = {
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "https://gtrsupply.com/" },
 };
+const solarBaseUrl = "https://www.sunsynchardware.com";
+const solarFallbackImg = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop";
+const solarCategories = [
+  { id: "all", name: "All Products", description: "Browse our complete selection of solar equipment" },
+  { id: "solar-panels", name: "Solar Panels", description: "High-efficiency solar panels from top manufacturers", subcategories: ["300W","400W","500W","600W","Bifacial","Made in USA","N Type","P Type","All Black","HJT","Mono PERC","TOPCon","Polycrystalline","Half-Cut","Silver Frame"] },
+  { id: "inverters", name: "Inverters", description: "Grid-tie, hybrid, and off-grid inverters", subcategories: ["Micro Inverters","Power Optimizers","String Inverters","Home Hub Systems"] },
+  { id: "storage-solutions", name: "Storage Solutions", description: "Battery storage systems and accessories", subcategories: ["5kWh","10kWh","16kWh","18.5kWh"] },
+  { id: "charge-controllers", name: "Charge Controllers", description: "MPPT and PWM charge controllers", subcategories: ["Load Controllers","MPPT Controllers","Classic Controllers","IQ System Controllers"] },
+  { id: "racking", name: "Racking", description: "Solar mounting and racking systems", subcategories: ['86" Rail','132" Rail','168" Rail','172" Rail','185" Rail','210" Rail'] },
+  { id: "mounting", name: "Mounting", description: "Solar panel mounting hardware and systems", subcategories: ["L-Foot","Ballast Base","Metal Roof","Bonding Hardware","Rail Mount","Roof Mount","T-Bolt","Serrated","Clear"] },
+  { id: "solar-equipment", name: "Solar Equipment", description: "Essential solar installation equipment", subcategories: ["PV Wire","DC Connectors","Bus End Caps","Inline Disconnect"] },
+  { id: "accessories", name: "Accessories", description: "Tools, communication, and EV charging", subcategories: ["AC Breakers","DC-DC Converters","Smart Controllers","MC4 Cables","Adapter Cables","AC Connectors","Combiner Boxes","Rapid Shutdown Kits","DC Disconnects","Mini Disconnects","Extender Cables","Female Connectors"] }
+];
+const solarProductData = {
+  "solar-panels": [
+    { id:"rec-375w", name:"REC Solar 375W TwinPeak 2S Mono 72 Series", model:"REC375TP2SM72", brand:"REC Solar", image:solarBaseUrl+"/images/products/solar-panels/REC_375.webp", availability:"in-stock", description:"High-efficiency REC Solar 375W panel featuring 72 half-cut monocrystalline PERC cells with up to 18.9% efficiency. Built for durability with snow load of 5500 Pa and wind load of 2400 Pa. Features MC4 compatible connectors and operates in temperature range of -40°C to 85°C.", specs:{ "Power Output":"375W", "Cell Type":"72 half-cut monocrystalline PERC cells", "Efficiency":"Up to 18.9%", "Durability":"Snow load 5500 Pa, wind load 2400 Pa", "Dimensions":"78.9 x 39.4 x 1.18 inches", "Weight":"48.5 lbs", "Temperature Range":"-40°C to 85°C", "Product Warranty":"20 years", "Performance Warranty":"25 years (86% output)", "Connectors":"MC4 compatible" }, features:["72 half-cut monocrystalline PERC cells for optimal performance","Up to 18.9% module efficiency","Exceptional durability with 5500 Pa snow load and 2400 Pa wind load","Wide temperature range operation (-40°C to 85°C)","MC4 compatible connectors for easy installation","20-year product warranty","25-year performance warranty with 86% power output guarantee","Advanced PERC technology for higher efficiency","Anti-reflective coating for improved light absorption","PID-resistant for long-term reliability"]},
+    { id:"jinko-385w", name:"Jinko 385W JKM385M-72HBL-V PERC Diamond Cell", model:"JKM385M-72HBL-V", brand:"Jinko", image:solarBaseUrl+"/images/products/solar-panels/Jinko_385.webp", availability:"in-stock", description:"Premium Jinko solar panel featuring Diamond Cell technology for exceptional performance and durability in various environmental conditions.", specs:{ "Type":"Monocrystalline", "Dimensions":'79.06" x 39.45" x 1.57"', "Weight":"51.8 lbs", "Cells":"144 half-cut cells", "Module Efficiency":"20.31%", "Operating Temperature":"-40°F to +185°F", "Max System Voltage":"1000V DC (1500V DC optional)", "Product Warranty":"12 years", "Performance Warranty":"25 years (84.8% output)" }, features:["Diamond Cell Technology for enhanced performance","20.31% module efficiency","Half-cut cell design reduces power loss","Excellent low-light performance","Enhanced PID resistance","High salt mist and ammonia resistance","12-year product warranty","25-year linear power output warranty"]},
+    { id:"qcells-340w", name:"QCELLS 340W Q.PEAK DUO BLK-G6+ All Black", model:"Q.PEAK DUO BLK-G6+ 340", brand:"QCELLS", image:solarBaseUrl+"/images/products/solar-panels/QCELLS_340.webp", availability:"in-stock", description:"Premium all-black solar panel with Q.ANTUM DUO technology, perfect for residential installations requiring aesthetic appeal and high performance.", specs:{ "Module Type":"Monocrystalline", "Power Output":"340W", "Module Efficiency":"19.6%", "Dimensions":"66.93 x 40.16 x 1.26 inches", "Weight":"40.8 lbs", "Cell Type":"Q.ANTUM DUO half-cell", "Frame":"Black anodized aluminum", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["Q.ANTUM DUO technology for superior performance","All-black aesthetic design","Hot-spot protection technology","Anti-LID and anti-PID technology","Excellent low-light performance","Enhanced shade tolerance","12-year product warranty","25-year linear power warranty"]},
+    { id:"canadian-330w", name:"Canadian Solar 330W HiDM CS1H-330MS", model:"CS1H-330MS", brand:"Canadian Solar", image:solarBaseUrl+"/images/products/solar-panels/CS_330.webp", availability:"in-stock", description:"High-density monocrystalline solar panel optimized for residential rooftops with excellent performance in various conditions.", specs:{ "Type":"Polycrystalline", "Power Output":"330W", "Cells":"72", "Voltage":"39.8V", "Efficiency":"19.1%", "Dimensions":"77.2 x 39.1 x 1.4 inches", "Weight":"49.6 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["High-density cell technology","Low hot-spot risk","Excellent performance in low-light conditions","PID resistant","Heavy snow load up to 5400 Pa","12-year product warranty","25-year linear power warranty"]},
+    { id:"hyundai-390w", name:"Hyundai 390W HiS-S390PI Bifacial", model:"HiS-S390PI", brand:"Hyundai", image:solarBaseUrl+"/images/products/solar-panels/HYUNDAI_390.webp", availability:"in-stock", description:"Advanced bifacial solar panel capturing light from both sides for increased energy generation.", specs:{ "Type":"Mono-crystalline Bifacial", "Power Output":"390W", "Cells":"144", "Voltage":"48.4V", "Efficiency":"20.3%", "Dimensions":"79.1 x 39.4 x 1.38 inches", "Weight":"52.9 lbs", "Bifacial Gain":"Up to 25%", "Product Warranty":"15 years", "Performance Warranty":"30 years" }, features:["Bifacial technology for up to 25% additional power","High efficiency mono-crystalline cells","Excellent durability and weather resistance","30-year performance warranty","Enhanced low-light performance","Suitable for various mounting configurations"]},
+    { id:"sinotec-410w", name:"Sinotec 410W STS-410P-54BB", model:"STS-410P-54BB", brand:"Sinotec", image:solarBaseUrl+"/images/products/solar-panels/SINOTEC_410.webp", availability:"in-stock", description:"High-performance monocrystalline PERC solar panel with excellent efficiency and reliability.", specs:{ "Type":"Monocrystalline PERC", "Power Output":"410W", "Cells":"108", "Voltage":"37.6V", "Efficiency":"20.8%", "Dimensions":"68.9 x 44.9 x 1.4 inches", "Weight":"46.3 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["PERC cell technology for higher efficiency","108 half-cut cells for better shade tolerance","Robust frame construction","PID resistant","Salt mist and ammonia resistant","12-year product warranty"]},
+    { id:"exiom-410w", name:"Exiom 410W EX410-108BMH", model:"EX410-108BMH", brand:"Exiom", image:solarBaseUrl+"/images/products/solar-panels/EXIOM_410.webp", availability:"in-stock", description:"Monocrystalline half-cut cell solar panel delivering excellent performance and reliability.", specs:{ "Type":"Monocrystalline Half-Cut", "Power Output":"410W", "Cells":"108", "Voltage":"37.52V", "Efficiency":"21.0%", "Dimensions":"68.9 x 44.6 x 1.4 inches", "Weight":"45.5 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["Half-cut cell technology","21% module efficiency","Excellent low-light performance","Hot-spot protection","PID resistant","Durable aluminum frame"]},
+    { id:"znshine-400w", name:"ZNShine 400W ZXM7-SH108-400/M", model:"ZXM7-SH108-400/M", brand:"ZNshine", image:solarBaseUrl+"/images/products/solar-panels/ZNSHINE_400.webp", availability:"in-stock", description:"High-efficiency monocrystalline solar panel with PERC technology for maximum energy harvest.", specs:{ "Type":"Monocrystalline", "Power Output":"400W", "Cells":"108", "Voltage":"40.8V", "Efficiency":"20.4%", "Dimensions":"68.9 x 44.9 x 1.4 inches", "Weight":"47.0 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["PERC cell technology","108 half-cut cells","Low degradation rate","Anti-reflective coating","PID free","Heavy snow load certified"]},
+    { id:"hyperion-405w", name:"Hyperion Solar 405W HY-DH108P8B", model:"HY-DH108P8B-405", brand:"Hyperion Solar Energy", image:solarBaseUrl+"/images/products/solar-panels/HYPERION_405.webp", availability:"in-stock", description:"Premium P-Type PERC solar panel with half-cut cell technology for superior performance.", specs:{ "Type":"Monocrystalline P-Type PERC", "Power Output":"405W", "Cells":"108", "Voltage":"37.23V", "Efficiency":"20.6%", "Dimensions":"68.9 x 44.9 x 1.4 inches", "Weight":"46.5 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["P-Type PERC technology","Half-cut cell design","Excellent temperature coefficient","Low light performance","Anti-PID technology","Robust frame construction"]},
+    { id:"phonosolartwinplus-550w", name:"PhonoSolar TwinPlus 550W PS550M6H-24/TH", model:"PS550M6H-24/TH", brand:"PhonoSolar", image:solarBaseUrl+"/images/products/solar-panels/PHONOSOLARTWINPLUS_550.webp", availability:"in-stock", description:"High-power monocrystalline solar panel ideal for commercial and utility-scale installations.", specs:{ "Type":"Monocrystalline", "Power Output":"550W", "Cells":"144", "Voltage":"40.8V", "Efficiency":"21.3%", "Dimensions":"89.8 x 44.9 x 1.4 inches", "Weight":"57.3 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["High power output for large installations","144 half-cut cells","Excellent efficiency rating","Low degradation rate","Robust design for harsh conditions","25-year performance warranty"]},
+    { id:"philadelphia-solar-580w", name:"Philadelphia Solar 580W Bifacial 144 Cells", model:"PS580-BF-144", brand:"Philadelphia Solar", image:solarBaseUrl+"/images/products/solar-panels/PHILADELPHIASOLAR_580.webp", availability:"in-stock", description:"Advanced N-Type bifacial solar panel with exceptional efficiency for commercial applications.", specs:{ "Type":"Bifacial N-Type Monocrystalline", "Power Output":"580W", "Cells":"144", "Voltage":"43.15V", "Efficiency":"21.8%", "Bifacial Gain":"Up to 30%", "Dimensions":"89.8 x 44.9 x 1.4 inches", "Weight":"59.5 lbs", "Product Warranty":"15 years", "Performance Warranty":"30 years" }, features:["N-Type cell technology","Bifacial design for additional power","High efficiency rating","Excellent low degradation","30-year performance warranty","Suitable for utility-scale projects"]},
+    { id:"phono-590w-draco", name:"Phono 590W Draco N-TOPCON PS590M8GF-24/TNH Solar Panel", model:"PS590M8GF-24/TNH", brand:"Phono", image:solarBaseUrl+"/images/products/solar-panels/PHONO_590.webp", availability:"in-stock", description:"Premium N-Type TOPCon bifacial solar panel with industry-leading efficiency and performance.", specs:{ "Type":"N-Type TOPCon Monocrystalline Bifacial", "Power Output":"590W", "Cells":"144", "Voltage":"43.58V", "Efficiency":"22.1%", "Bifacial Gain":"Up to 30%", "Dimensions":"89.8 x 44.9 x 1.4 inches", "Weight":"60.2 lbs", "Product Warranty":"15 years", "Performance Warranty":"30 years" }, features:["Latest N-Type TOPCon technology","22.1% module efficiency","Bifacial design","Excellent low-light performance","Lower temperature coefficient","30-year linear power warranty"]},
+    { id:"ja-solar-615w-bifacial", name:"JA Solar 615W Bifacial Mono PERC Silver Frame Solar Panel", model:"JAM66-D45-615LB", brand:"JA Solar", image:solarBaseUrl+"/images/products/solar-panels/JASOLAR_615.webp", availability:"in-stock", description:"High-power bifacial PERC solar panel designed for utility-scale and commercial installations.", specs:{ "Type":"Monocrystalline PERC Bifacial", "Power Output":"615W", "Cells":"132", "Voltage":"43.58V", "Efficiency":"21.5%", "Bifacial Gain":"Up to 25%", "Dimensions":"92.5 x 44.9 x 1.4 inches", "Weight":"63.5 lbs", "Product Warranty":"12 years", "Performance Warranty":"25 years" }, features:["PERC bifacial technology","132 half-cut cells","High power density","Excellent durability","Multiple certifications","25-year performance warranty"]},
+    { id:"thornova-620w-tangra", name:"Thornova 620W Tangra L Pro HD N-Type Bifacial Solar Panel (Pallet of 31)", model:"TS-BGT66(620)-G11", brand:"Thornova", image:solarBaseUrl+"/images/products/solar-panels/THORNOVA_620.webp", availability:"in-stock", description:"Premium N-Type bifacial solar panel with exceptional efficiency and power output for large-scale projects.", specs:{ "Type":"N-Type Monocrystalline Bifacial", "Power Output":"620W", "Cells":"132", "Voltage":"44.6V", "Efficiency":"22.3%", "Bifacial Gain":"Up to 30%", "Dimensions":"92.5 x 44.9 x 1.4 inches", "Weight":"64.2 lbs", "Product Warranty":"15 years", "Performance Warranty":"30 years" }, features:["N-Type cell technology","Industry-leading 22.3% efficiency","Bifacial design for maximum output","Low degradation rate","30-year performance warranty","Ideal for utility-scale projects"]},
+    { id:"hyundai-640w-nj", name:"Hyundai 640W NJ Series N Type TOPCon Solar Panel (504 per Container)", model:"HiN-T640NJ", brand:"Hyundai", image:solarBaseUrl+"/images/products/solar-panels/HYUNDAI_640.webp", availability:"in-stock", description:"Ultra-high-power N-Type TOPCon bifacial solar panel for maximum energy generation in commercial applications.", specs:{ "Type":"N-Type TOPCon Bifacial", "Power Output":"640W", "Cells":"156", "Efficiency":"22.5%", "Bifacial Gain":"Up to 30%", "Dimensions":"95.3 x 46.9 x 1.4 inches", "Weight":"68.3 lbs", "Product Warranty":"15 years", "Performance Warranty":"30 years" }, features:["Latest TOPCon technology","22.5% module efficiency","156-cell design for maximum power","Bifacial capability","Excellent temperature coefficient","30-year performance warranty"]}
+  ],
+  "inverters": [
+    { id:"enphase-iq8hc", name:"Enphase IQ8HC Microinverter IQ8HC-72-M-DOM-US Made in the USA", model:"IQ8HC-72-M-DOM-US", brand:"Enphase", image:solarBaseUrl+"/images/products/inverters/ENPHASE_240v.webp", availability:"in-stock", description:"High-capacity microinverter designed for larger solar modules with advanced grid support features and made in the USA for superior quality and reliability.", specs:{ "Model":"IQ8HC-72-M-DOM-US", "Module Compatibility":"440W – 540W 72-cell or equivalent", "AC Output Power (Peak)":"384VA", "Nominal AC Voltage":"240V Split-Phase", "MPPT Operating Range":"38 – 45V", "DC Input Voltage Range":"16 – 60V", "CEC Weighted Efficiency":"97.0%", "Grid Support Features":"Volt/VAR, Freq/Watt, Ride-Through (IEEE 1547)", "Monitoring":"Via Enphase App and IQ Gateway", "Communication":"Power Line Communication (PLC)", "Enclosure Rating":"NEMA 6 (Outdoor Rated)", "Dimensions (L × W × H)":"8.3 x 6.9 x 1.2 inches", "Weight":"~2.71 lbs", "Certifications":"UL 1741 SA, IEEE 1547, NEC 690.12", "Warranty":"25-Year Limited Warranty" }, features:["97.0% CEC weighted efficiency for maximum energy production","High-capacity 384VA output for larger solar modules","Compatible with 440W – 540W 72-cell modules","Advanced grid support features (Volt/VAR, Freq/Watt, Ride-Through)","IEEE 1547 compliant grid-forming capability","Real-time monitoring via Enphase App and IQ Gateway","Power Line Communication (PLC) for reliable data transmission","NEMA 6 outdoor rated enclosure for harsh environments","Made in the USA for superior quality and reliability","25-year limited warranty for long-term peace of mind","Easy installation and maintenance","Split-phase 240V output for residential applications","Wide DC input voltage range (16 – 60V) for flexibility","Optimized MPPT operating range (38 – 45V)","UL 1741 SA, IEEE 1547, and NEC 690.12 certified"]},
+    { id:"solaredge-u650-optimizer", name:"SolarEdge Power Optimizer 650W 15A 60V U650-1GM4MRMU", model:"SolarEdge U650", brand:"SolarEdge", image:solarBaseUrl+"/images/products/inverters/SOLAREDGE.webp", availability:"in-stock", description:"Advanced power optimizer maximizing energy harvest from each solar panel with module-level monitoring.", specs:{ "Max Input Power":"650W", "Max Input Current":"15A", "Max Input Voltage":"60V", "Efficiency":"99.5%", "Type":"Power Optimizer", "Output Voltage":"1V safe voltage", "Warranty":"25 years" }, features:["99.5% weighted efficiency","Module-level MPPT","SafeDC voltage reduction","25-year warranty","Real-time monitoring","Supports high-power modules","Flexible system design","Easy installation"]},
+    { id:"solaredge-homehub-7kw", name:"SolarEdge 7KW Home Hub Inverter SE5700H-USMNBE78", model:"SE5700H-USMNBE78", brand:"SolarEdge", image:solarBaseUrl+"/images/products/inverters/SOLAREDGEHOMEHUB.webp", availability:"in-stock", description:"All-in-one hybrid inverter with backup power capability and seamless battery integration.", specs:{ "AC Power Output":"7kW", "Type":"Hybrid Inverter", "DC Input Voltage":"380V", "Efficiency":"99%", "Backup Power":"Yes", "EV Charger Ready":"Yes", "Warranty":"12 years" }, features:["Integrated backup power capability","EV charger ready","99% weighted efficiency","12-year standard warranty","HD-Wave technology","Compact lightweight design","Built-in arc fault protection","Real-time monitoring"]},
+    { id:"enphase-iq7hs", name:"Enphase IQ7HS Microinverter IQ7HS-66-M-US", model:"EN-IQ7HS-66-M-US", brand:"Enphase", image:solarBaseUrl+"/images/products/inverters/ENPHASEIQ7HS.webp", availability:"in-stock", description:"High-power microinverter designed for high-wattage 60/66-cell solar modules with excellent efficiency.", specs:{ "AC Power Output":"384VA", "Type":"Microinverter", "Peak Power":"400VA", "Efficiency":"97.5%", "Module Compatibility":"60/66 cell modules up to 460W", "Warranty":"25 years" }, features:["97.5% CEC efficiency","25-year limited warranty","Rapid shutdown compliant","Real-time monitoring","Enphase App integration","Reliable semiconductor components","Easy plug-and-play installation"]}
+  ],
+  "storage-solutions": [
+    { id:"enphase-5kwh-battery", name:"Enphase 5.0 kWh IQ Battery 5P for IQ Battery 10C Unit B05-C01-US00-1-3 (Standalone)", model:"B05-C01-US00-1-3", brand:"Enphase", image:solarBaseUrl+"/images/products/storage-solutions/ENPHASE_5.0KWh.webp", availability:"in-stock", description:"High-performance Enphase 5.0 kWh IQ Battery unit designed for residential energy storage, featuring advanced monitoring and seamless integration with Enphase solar systems.", specs:{ "Model":"B05-C01-US00-1-3", "Battery Capacity":"5.0 kWh", "Battery Units":"1", "Mounting Brackets":"1", "Seismic Screws":"2", "Mounting Bracket Fasteners":"6 M8 hexagonal Phillips screws with washers", "Drill Templates":"1", "System Integration":"IQ Battery 10C compatible", "Cover Required":"Not included (IQ 10C Cover needed)", "Additional Requirements":"IQ Combiner 6C, IQ Meter Collar (REQUIRED for whole home backup)", "Certification":"Enphase certification required for system commissioning", "Installation":"Wall-mounted with included mounting bracket", "Compatibility":"Enphase IQ whole home backup systems", "Warranty":"Enphase standard warranty" }, features:["5.0 kWh battery capacity for residential energy storage","Complete mounting solution with bracket and hardware","Seismic-rated mounting for safety and stability","Compatible with IQ Battery 10C systems (requires 2 units + cover)","Advanced monitoring and diagnostics via Enphase Enlighten","Seamless integration with Enphase solar systems","Professional installation with included drill templates","Wall-mounted design for space efficiency","Enphase certification ensures proper system commissioning","IQ Meter Collar compatibility for whole home backup","Modular design for easy system expansion","Comprehensive mounting hardware included","Professional-grade installation support","Enphase University training available for certification"]},
+    { id:"midnite-16kwh-powerflo", name:"MidNite 16 kWh MNPowerflo16 51.2V Wall Mount Battery", model:"MNPowerflo16", brand:"MidNite", image:solarBaseUrl+"/images/products/storage-solutions/MIDNITE16kwh.webp", availability:"in-stock", description:"High-capacity wall-mount battery system with LFP chemistry for reliable off-grid and backup power applications.", specs:{ "Battery Capacity":"16.076 kWh", "Nominal Voltage":"51.2V", "Battery Chemistry":"Lithium Iron Phosphate (LFP)", "Max Charge Current":"100A", "Max Discharge Current":"100A", "Dimensions":"50.0 x 24.0 x 8.5 inches", "Weight":"308 lbs", "Warranty":"10 years" }, features:["16+ kWh capacity","Wall-mount design","LFP chemistry for safety","100A charge/discharge rate","10-year warranty","Compatible with major inverters","Built-in BMS","Indoor installation"]},
+    { id:"schneider-10kwh-battery", name:"Schneider 10kWh Electric Boost LFP Battery BAT10K1", model:"BAT10K1", brand:"Schneider", image:solarBaseUrl+"/images/products/storage-solutions/SCHNEIDER10kwh.webp", availability:"in-stock", description:"Professional-grade LFP battery system designed for seamless integration with Schneider Electric inverters.", specs:{ "Battery Capacity":"10.56 kWh", "Battery Chemistry":"Lithium Iron Phosphate (LFP)", "Nominal Voltage":"51.2V", "Max Power":"5kW continuous", "Round-Trip Efficiency":"95%", "Dimensions":"38.0 x 22.0 x 8.0 inches", "Weight":"242 lbs", "Warranty":"10 years" }, features:["10.56 kWh usable capacity","LFP chemistry","95% round-trip efficiency","Schneider system integration","10-year warranty","Built-in battery management","Floor or wall mount","Indoor rated"]},
+    { id:"fortress-power-18.5kwh", name:"Fortress Power eVault Max 18.5 kWh 48V Lithium Iron Phosphate Battery", model:"eVault Max 18.5", brand:"Fortress Power", image:solarBaseUrl+"/images/products/storage-solutions/FORTRESS18.5kwh.webp", availability:"in-stock", description:"Premium high-capacity LFP battery system for residential and commercial energy storage applications.", specs:{ "Battery Capacity":"18.5 kWh", "Nominal Voltage":"51.2V", "Battery Chemistry":"Lithium Iron Phosphate (LiFePO4)", "Max Continuous Power":"9.6kW", "Round-Trip Efficiency":"98%", "Dimensions":"44.0 x 26.0 x 10.0 inches", "Weight":"375 lbs", "Warranty":"10 years" }, features:["18.5 kWh capacity","LiFePO4 chemistry","98% round-trip efficiency","9.6kW continuous power","10-year warranty","Compatible with all major inverters","Advanced BMS","Indoor/outdoor rated"]}
+  ],
+  "charge-controllers": [
+    { id:"enphase-iq-load-controller", name:"Enphase EP-NA-LK02-040 Accessory IQ Load Controller", model:"EP-NA-LK02-040", brand:"Enphase", image:solarBaseUrl+"/images/products/charge-controllers/ENPHASELOADCONTROLLER.webp", availability:"in-stock", description:"Smart load controller for managing essential loads during backup power operation with Enphase IQ System.", specs:{ "Type":"Smart Load Controller", "Max Load":"40A", "Voltage":"240V", "Relay Circuits":"4", "Communication":"Powerline", "Integration":"Enphase IQ System", "Warranty":"5 years" }, features:["Smart load management","4 relay circuits","240V 40A capacity","Enphase system integration","Powerline communication","5-year warranty","Easy installation","Essential load prioritization"]},
+    { id:"schneider-conext-100a", name:"Schneider Conext 865-1034 100A 600VDC MPPT Charge Controller", model:"XW-MPPT100-600", brand:"Schneider Electric", image:solarBaseUrl+"/images/products/charge-controllers/SCHNEIDERCONTROLLER.webp", availability:"in-stock", description:"Professional-grade MPPT charge controller for large off-grid and grid-tied battery systems.", specs:{ "Max Current":"100A", "Max PV Voltage":"600V DC", "Type":"MPPT Charge Controller", "Battery Voltage":"12/24/36/48/60V", "Max PV Power":"5600W (48V)", "Efficiency":"98%", "Display":"LCD with LED indicators", "Warranty":"5 years" }, features:["100A output current","600V DC input voltage","98% conversion efficiency","Multi-stage charging algorithm","5-year warranty","LCD display","Wide battery voltage range","Ground fault protection"]},
+    { id:"midnite-classic-250", name:"Midnite Solar CLASSIC250 63A 250VDC MPPT Charge Controller", model:"CLASSIC 250", brand:"MidNite Solar", image:solarBaseUrl+"/images/products/charge-controllers/MIDNITECONTROLLER.webp", availability:"in-stock", description:"High-performance MPPT charge controller with advanced features for off-grid solar systems.", specs:{ "Max Current":"63A", "Max PV Voltage":"250V DC", "Type":"MPPT Charge Controller", "Battery Voltage":"12/24/48V", "Max PV Power":"3000W (48V)", "Efficiency":"99%", "Display":"LED indicators", "Warranty":"5 years" }, features:["63A output current","250V DC input","99% MPPT efficiency","Arc fault detection","5-year warranty","Aux relay output","HyperVOC for cold weather","Ground fault protection"]},
+    { id:"enphase-iq-system-controller-2", name:"Enphase IQ System Controller 2 w/ Neutral-Forming Transformer", model:"EN-EP200G101-M240US01", brand:"Enphase", image:solarBaseUrl+"/images/products/charge-controllers/ENPHASE_M24.webp", availability:"in-stock", description:"Complete system controller with integrated microgrid interconnect device for whole-home backup power.", specs:{ "Type":"IQ System Controller", "Transfer Switch":"200A", "Voltage":"240V Split-Phase", "Backup Mode":"Whole-home or Essential loads", "Grid Connection":"120/240V", "Communication":"Powerline & WiFi", "Warranty":"5 years" }, features:["200A automatic transfer switch","Whole-home backup capable","Neutral-forming transformer included","Grid-forming capability","5-year warranty","Real-time monitoring","Storm Guard feature","Advanced grid-forming capability"]}
+  ],
+  "racking": [
+    { id:"k2-crossrail-44x", name:"K2 Systems SPO CrossRail 44-X 86'' Mill 4000143", model:"4000143", brand:"K2 Systems", image:solarBaseUrl+"/images/products/racking/K2_RAIL.webp", availability:"in-stock", description:"Premium aluminum rail for residential and commercial solar installations with versatile mounting options.", specs:{ "Material":"6000 Series Aluminum", "Length":'86"', "Profile":"44mm", "Finish":"Mill", "Load Capacity":"High wind and snow loads", "Warranty":"12 years" }, features:["6000 series aluminum construction","86 inch length","Mill finish","Pre-drilled holes","High load capacity","12-year warranty","Universal compatibility","Easy installation"]},
+    { id:"ironridge-xr-rail-132a", name:"IronRidge XR RAIL XR-1000-132A 132\" (11') Clear Rail", model:"XR-1000-132A", brand:"IronRidge", image:solarBaseUrl+"/images/products/racking/IRONRIDGERAIL.webp", availability:"in-stock", description:"Durable and versatile mounting solution designed for solar panel installations with clear finish for a sleek and modern look, offering durability, ease of installation, and compatibility with various solar panel configurations.", specs:{ "Model":"XR-1000-132A", "Construction":"Durable materials", "Length":"132 inches (11 feet)", "Finish":"Clear", "Compatibility":"Various solar panel sizes and configurations", "Installation Type":"Rail installation", "Manufacturer":"IronRidge", "Technology":"Advanced engineering for secure and efficient mounting", "Appearance":"Sleek and modern appearance", "Performance":"Optimal performance with sturdy construction", "Installation":"Easy installation process for quick and hassle-free mounting", "Versatility":"Versatility and flexibility in installation", "Applications":"Residential, commercial, and utility-scale solar projects", "Reliability":"Reliable and cost-effective solution for solar panel mounting", "Stability":"Ensures stability and longevity of solar panel installation" }, features:["Durable construction for long-lasting performance","Clear finish for sleek and modern appearance","Easy installation allows for quick mounting","Versatile compatibility with various solar panel configurations","Industry-leading engineering for secure mounting","Ideal for residential and commercial solar projects","IronRidge quality assurance and reliability","Optimized for maximum efficiency and performance","Supports expansion and customization","Professional-grade design for versatility","Cost-effective solar panel mounting solution","Hassle-free installation process","Long-term stability and durability","Trusted by solar professionals worldwide"]},
+    { id:"ironridge-xr-100-168m", name:"IronRidge Mounting Rail 168 inches (14 ft) XR-100-168M-US", model:"XR-100-168M-US", brand:"IronRidge", image:solarBaseUrl+"/images/products/racking/IRONRIDGE168.webp", availability:"in-stock", description:"Extended length aluminum rail for larger residential and commercial solar array installations.", specs:{ "Material":"6000-series Aluminum Alloy", "Length":'168" (14 ft)', "Profile":"XR-100 Series", "Finish":"Mill", "Load Rating":"High", "Warranty":"25 years" }, features:["14-foot length","6000-series aluminum alloy","Mill finish","25-year warranty","UL 2703 listed","Integrated bonding","Easy splicing"]},
+    { id:"prosolar-rooftrac-r-172xd", name:"Prosolar RoofTrac R-172XD 172\" Extra Deep Support Rail", model:"R-172XD", brand:"ProSolar", image:solarBaseUrl+"/images/products/racking/PROSOLAR172.webp", availability:"in-stock", description:"Extra deep support rail for commercial installations requiring extended spans and higher load capacity.", specs:{ "Material":"Aluminum", "Length":'172" (14.3 ft)', "Type":"Extra Deep Support Rail", "Profile":"XD Series", "Load Rating":"Heavy duty", "Warranty":"20 years" }, features:["Extra deep profile","172 inch length","Heavy duty construction","20-year warranty","Extended span capability","Commercial grade"]},
+    { id:"k2-crossrail-44x-185", name:"K2 Systems CrossRail 44-X 185'' Mill 4000721", model:"4000721", brand:"K2 Systems", image:solarBaseUrl+"/images/products/racking/K2_185.webp", availability:"in-stock", description:"Extended length aluminum rail for large commercial and utility-scale solar installations.", specs:{ "Material":"6000 Series Aluminum", "Length":'185"', "Profile":"44mm", "Finish":"Mill", "Load Capacity":"High wind and snow loads", "Warranty":"12 years" }, features:["6000 series aluminum","185 inch length","Mill finish","12-year warranty","High load capacity","Commercial grade","Universal compatibility"]},
+    { id:"ironridge-xr1000-210m", name:"IronRidge XR1000 210\" 17.5ft Anodized Rail Mill", model:"XR-1000-210M", brand:"IronRidge", image:solarBaseUrl+"/images/products/racking/IRONRIDGE_210.webp", availability:"in-stock", description:"Extra-long aluminum rail for large commercial arrays minimizing splice points.", specs:{ "Material":"6000-series Aluminum Alloy", "Length":'210" (17.5 ft)', "Profile":"XR-1000 Series", "Finish":"Mill anodized", "Load Rating":"High", "Warranty":"25 years" }, features:["17.5-foot length","Mill anodized finish","25-year warranty","UL 2703 listed","Fewer splice points","Commercial grade","Integrated bonding"]}
+  ],
+  "mounting": [
+    { id:"ironridge-ufo-lft-03-m1", name:"IronRidge UFO LFT-03-M1 Mill Slotted L-foot", model:"LFT-03-M1", brand:"IronRidge", image:solarBaseUrl+"/images/products/mounting/IRONRIDGELFOOT.webp", availability:"in-stock", description:"Universal slotted L-foot for versatile roof mounting with easy positioning adjustment.", specs:{ "Type":"L-Foot", "Material":"Aluminum", "Finish":"Mill", "Slot":"Slotted for adjustment", "Compatibility":"UFO Series", "Warranty":"25 years" }, features:["Slotted design for adjustment","Mill aluminum finish","25-year warranty","UFO series compatible","Easy installation","Universal fit"]},
+    { id:"unirac-solarmount-304001c", name:"Unirac Solarmount 304001C Clear Serrated L-foot", model:"304001C", brand:"Unirac", image:solarBaseUrl+"/images/products/mounting/UNIRACLFOOT.webp", availability:"in-stock", description:"Serrated L-foot with T-bolt for secure roof attachment in Solarmount systems.", specs:{ "Type":"L-Foot", "Material":"Aluminum", "Finish":"Clear", "Design":"Serrated with T-Bolt", "Compatibility":"Solarmount systems", "Warranty":"20 years" }, features:["Serrated base for grip","Clear finish","20-year warranty","T-bolt included","Easy installation","Solarmount compatible"]},
+    { id:"unirac-solarmount-304001d", name:"Unirac Solarmount 304001D Dark Serrated L-foot", model:"304001D", brand:"Unirac", image:solarBaseUrl+"/images/products/mounting/UNIRACDLFOOT.webp", availability:"in-stock", description:"Dark-finished serrated L-foot for aesthetically matched roof installations.", specs:{ "Type":"L-Foot", "Material":"Aluminum", "Finish":"Dark", "Design":"Serrated", "Compatibility":"Solarmount systems", "Warranty":"20 years" }, features:["Dark finish for aesthetics","Serrated base","20-year warranty","Aluminum construction","Easy installation"]},
+    { id:"unirac-ecolibrium-ecofoot2-es20207", name:"UNIRAC ECOLIBRIUM ECOFOOT2 ES20207 BALLAST BASE", model:"ES20207", brand:"Unirac", image:solarBaseUrl+"/images/products/mounting/UNIRACBASE.webp", availability:"in-stock", description:"Ballast base for flat roof installations requiring non-penetrating mounting solutions.", specs:{ "Type":"Ballast Base", "Material":"Durable Metal Alloy", "Design":"Non-penetrating", "Roof Type":"Flat roofs", "Compatibility":"Ecolibrium system", "Warranty":"20 years" }, features:["Non-penetrating design","Ballast-based mounting","20-year warranty","Flat roof compatible","Ecolibrium system"]},
+    { id:"s5-versagard-metal-roof-lfoot", name:"S-5-Versagard METAL ROOF L-FOOT", model:"VersaGard", brand:"S-5!", image:solarBaseUrl+"/images/products/mounting/VERSAGARDLFOOT.webp", availability:"in-stock", description:"Specialized L-foot for metal roof installations with VersaGard snow retention compatibility.", specs:{ "Type":"Metal Roof L-Foot", "Design":"VersaGard compatible", "Roof Type":"Standing seam metal roofs", "Material":"Aluminum", "Use":"Solar and snow retention", "Warranty":"Lifetime" }, features:["Metal roof specific","VersaGard compatible","Lifetime warranty","No roof penetrations","Snow retention capable"]},
+    { id:"snapnrack-ultra-rail-242-01223", name:"Snapnrack Ultra Rail 242-01223 Silver L-foot", model:"242-01223", brand:"Snapnrack", image:solarBaseUrl+"/images/products/mounting/SNAPNRACKLFOOT.webp", availability:"in-stock", description:"Silver L-foot for Ultra Rail system with universal roof mount compatibility.", specs:{ "Type":"L-Foot", "Material":"Aluminum", "Color":"Silver", "Compatibility":"Ultra Rail system", "Installation":"Roof Mount", "Warranty":"20 years" }, features:["Silver finish","20-year warranty","Ultra Rail compatible","Universal mounting","Easy installation"]},
+    { id:"unirac-roofmount-310800", name:"UNIRAC ROOFMOUNT 310800 BALLAST BAY", model:"310800", brand:"UniRac", image:solarBaseUrl+"/images/products/mounting/UNIRACROOFMOUNT.webp", availability:"in-stock", description:"Ballast bay system for flat roof installations with adjustable tilt capability.", specs:{ "Type":"Rooftop Mount Ballast Bay", "Tilt":"5 degrees", "Roof Type":"Flat roof", "Material":"Steel/aluminum", "Installation":"Pre-assembled", "Warranty":"20 years" }, features:["5-degree tilt","Pre-assembled components","20-year warranty","Flat roof design","Ballast-based system"]},
+    { id:"ironridge-ufo-bhw-tb-02-a1", name:"Ironridge Ufo BHW-TB-02-A1 Mill T-bolt L-foot Bonding Hardware", model:"BHW-TB-02-A1", brand:"IronRidge", image:solarBaseUrl+"/images/products/mounting/IRONRIDGETBOLT.webp", availability:"in-stock", description:"T-bolt bonding hardware for electrical grounding with UFO series mounting systems.", specs:{ "Type":"Bonding Hardware", "Material":"Aluminum", "Compatibility":"FF2, L-feet, UFO series", "Attachment":"T-Bolt", "Design":"Integrated bonding", "Warranty":"25 years" }, features:["Integrated bonding","T-bolt attachment","25-year warranty","UFO series compatible","Aluminum construction"]},
+    { id:"ecofasten-lfoot-scl-101-blk", name:"EcoFasten L-Foot SCL-101 BLK 3\" 3011018", model:"3011018", brand:"EcoFasten", image:solarBaseUrl+"/images/products/mounting/ECOFASTENLFOOT.webp", availability:"in-stock", description:"3-inch black L-foot with stainless steel hardware for rail-based PV racking systems.", specs:{ "Type":"L-Foot", "Material":"Aluminum foot, stainless steel hardware", "Finish":"Black", "Height":"3.00 inches", "Compatibility":"Rail-based PV racking", "Warranty":"20 years" }, features:["Black finish","Stainless steel hardware","20-year warranty","3-inch height","Rail-based compatibility"]}
+  ],
+  "solar-equipment": [
+    { id:"titan-pv-wire-10awg-red", name:"Titan 01-PV-1019X-SJ-RD-2N 10AWG 1,000' Red PV Wire", model:"01-PV-1019X-SJ-RD-2N", brand:"Titan", image:solarBaseUrl+"/images/products/solar-equipment/TITAN.webp", availability:"in-stock", description:"1,000 feet of premium 10AWG red PV wire with 19-strand copper construction for solar installations.", specs:{ "Type":"PV Wire", "Size":"10 AWG", "Length":"1,000 feet", "Color":"Red", "Material":"19 Strand Copper", "Voltage Rating":"600V DC", "Temperature":"90°C" }, features:["10 AWG size","1,000 foot spool","19-strand copper","Red insulation","600V DC rated","UV resistant","UL listed"]},
+    { id:"fronius-dc-connector-kit-part-a", name:"FRONIUS 4,202,014,479 DC CONNECTOR KIT PART A", model:"42,0201,4479", brand:"Fronius", image:solarBaseUrl+"/images/products/solar-equipment/FRONIUS.webp", availability:"in-stock", description:"DC connector kit for Fronius inverter installations including positive bus bar connections.", specs:{ "Type":"DC Connector Kit", "Component":"Positive Bus Bar", "Compatibility":"Fronius Inverters", "Material":"High-quality conductors" }, features:["Fronius compatible","Positive bus bar included","High-quality construction","Easy installation"]},
+    { id:"apsystems-bus-end-cap", name:"APsystems 2060700007 Bus End Cap", model:"2060700007", brand:"APsystems", image:solarBaseUrl+"/images/products/solar-equipment/APSYSTEMS.webp", availability:"in-stock", description:"End cap for APsystems AC bus cable providing weather protection and system termination.", specs:{ "Type":"AC Bus Cable End Cap", "Compatibility":"YC600 & QS1 microinverters", "Material":"UV-resistant plastic", "Protection":"Weatherproof" }, features:["YC600 & QS1 compatible","Weatherproof design","UV resistant","Easy snap-on installation"]},
+    { id:"generac-snaprs-apke00011", name:"Generac SnapRS APKE00011 Inline Disconnect Switch For Rapid Shut Down", model:"APKE00011", brand:"Generac", image:solarBaseUrl+"/images/products/solar-equipment/GENERAC.webp", availability:"in-stock", description:"Inline disconnect switch for NEC 690.12 rapid shutdown compliance in solar installations.", specs:{ "Type":"Inline Disconnect Switch", "Function":"Rapid Shut Down", "Compliance":"NEC 690.12", "Voltage":"600V DC", "Current":"15A" }, features:["NEC 690.12 compliant","Rapid shutdown function","600V DC rated","15A current rating","Easy inline installation"]}
+  ],
+  "accessories": [
+    { id:"midnite-solar-mneac30-breaker", name:"Midnite Solar MNEAC30 30AMP AC Din Rail Mount Breaker", model:"MNEAC30", brand:"MidNite Solar", image:solarBaseUrl+"/images/products/accessories/MIDNITEBREAKER.webp", availability:"in-stock", description:"30A AC DIN rail mount breaker for solar and battery system protection.", specs:{ "Type":"AC Din Rail Mount Breaker", "Current":"30A", "Voltage":"120/240V AC", "Mount":"DIN Rail", "Poles":"1" }, features:["30A capacity","DIN rail mount","AC rated","Compact design","Easy installation"]},
+    { id:"midnite-solar-mneac10-breaker", name:"MidNite Solar MNEAC10 10A 120VAC Din Rail Mount Circuit Breaker", model:"MNEAC10", brand:"MidNite Solar", image:solarBaseUrl+"/images/products/accessories/MIDNITE10a.webp", availability:"in-stock", description:"10A AC DIN rail circuit breaker for auxiliary circuit protection in solar systems.", specs:{ "Type":"Din Rail Mount Circuit Breaker", "Current":"10A", "Voltage":"120V AC", "Mount":"DIN Rail", "Poles":"1" }, features:["10A rating","120V AC","DIN rail mount","Compact design"]},
+    { id:"victron-orion-tr-smart-24-12-30a", name:"Victron ORI241236140 Orion-Tr Smart 24/12-30A (360W) Non-isolated DC-DC", model:"ORI241236140", brand:"Victron Energy", image:solarBaseUrl+"/images/products/accessories/VICTRON30a.webp", availability:"in-stock", description:"Smart DC-DC converter for charging 12V batteries from 24V systems with Bluetooth monitoring.", specs:{ "Type":"DC-DC Converter", "Power":"360W", "Input":"24V", "Output":"12V @ 30A", "Efficiency":"Up to 94%", "Monitoring":"Bluetooth" }, features:["360W power","24V to 12V conversion","30A output","Bluetooth monitoring","High efficiency","Smart charging algorithm"]},
+    { id:"iota-engineering-agm-smart-controller", name:"Iota Engineering AGM 14.7VDC/29.4VDC 2-Stage Smart Controller", model:"IOTA-AGM", brand:"Iota Engineering", image:solarBaseUrl+"/images/products/accessories/IOTA-AGM.webp", availability:"in-stock", description:"Smart controller optimized for AGM battery charging with multi-stage charging algorithm.", specs:{ "Type":"Smart Controller", "Voltage":"14.7V DC / 29.4V DC", "Stages":"4-Stage Charging", "Battery Type":"AGM optimized" }, features:["4-stage charging","AGM optimized","Dual voltage option","Smart charging"]},
+    { id:"sma-rsc-1x-us-10-rapid-shutdown-controller", name:"SMA RSC-1X-US-10 Rapid Shutdown Controller", model:"RSC-1X-US-10", brand:"SMA", image:solarBaseUrl+"/images/products/accessories/SMA_CONTROLLER.webp", availability:"in-stock", description:"Module-level rapid shutdown controller for NEC 690.12 compliance in SMA systems.", specs:{ "Type":"Rapid Shutdown Controller", "Voltage":"600V DC", "Certification":"UL Certified", "Compliance":"NEC 690.12" }, features:["NEC 690.12 compliant","600V DC rated","UL certified","SMA compatible"]},
+    { id:"midnite-solar-mndc175plus-mini-dc-disconnect", name:"MidNite Solar MNDC175PLUS Mini DC Disconnect PC Plus", model:"MNDC175PLUS", brand:"MidNite Solar", image:solarBaseUrl+"/images/products/accessories/MIDNITE_DC.webp", availability:"in-stock", description:"Compact DC disconnect switch for battery and PV system isolation.", specs:{ "Type":"Mini DC Disconnect", "Voltage":"175V DC", "Current":"175A", "Poles":"2-Pole", "Enclosure":"NEMA 3R" }, features:["175V 175A rating","2-pole disconnect","NEMA 3R enclosure","Compact design"]},
+    { id:"midnite-solar-mndc125plus-mini-dc-disconnect", name:"MidNite Solar MNDC125PLUS Mini DC Disconnect PC Plus", model:"MNDC125PLUS", brand:"MidNite Solar", image:solarBaseUrl+"/images/products/accessories/MIDNITE125.webp", availability:"in-stock", description:"125V DC mini disconnect for smaller solar and battery systems.", specs:{ "Type":"Mini DC Disconnect PC Plus", "Voltage":"125V DC", "Current":"125A", "Enclosure":"Steel, IP20" }, features:["125V 125A rating","Steel enclosure","IP20 rating","Compact design"]},
+    { id:"staubli-3-foot-mc4-extender-cable", name:"Staubli 3 Foot MC4 Extender Cable UL Certified", model:"59014726-0098UL", brand:"Staubli", image:solarBaseUrl+"/images/products/accessories/STAUBLI3.webp", availability:"in-stock", description:"3-foot MC4 extension cable for solar panel connections with UL certification.", specs:{ "Type":"MC4 Extender Cable", "Length":"3 feet", "Wire":"10 AWG", "Certification":"UL Certified", "Connectors":"MC4 Male-Female" }, features:["3-foot length","10 AWG wire","UL certified","MC4 connectors"]},
+    { id:"enphase-en4-to-mc4-adapter-cable", name:"Enphase EN4 to MC4 Adapter Cable 1000mm", model:"ECA-EN4-S22-10-12", brand:"Enphase", image:solarBaseUrl+"/images/products/accessories/ENPHASEADAPTER.webp", availability:"in-stock", description:"Adapter cable for connecting MC4 panels to Enphase EN4 microinverter connectors.", specs:{ "Type":"Adapter Cable", "Length":"1000mm", "Connection":"EN4 to MC4", "Certification":"UL 9703", "Wire":"12 AWG" }, features:["EN4 to MC4 adapter","1000mm length","UL 9703 certified","12 AWG wire"]},
+    { id:"apsystems-ac-cable-connector-female-40a", name:"APSystems AC Cable Connector Female 40A 10 AWG", model:"2301512002", brand:"APSystems", image:solarBaseUrl+"/images/products/accessories/APSYS_FEMALE.webp", availability:"in-stock", description:"Female AC connector for APSystems microinverter trunk cable connections.", specs:{ "Type":"AC Connector (Female)", "Voltage":"600V", "Current":"40A", "Protection":"IP67", "Wire":"10 AWG", "Resistance":"≤50mΩ" }, features:["40A rated","IP67 waterproof","600V rated","10 AWG compatible"]},
+    { id:"midnite-solar-mnpv4-mc4-combiner-box", name:"Midnite Solar MNPV4-MC4 Combiner Box", model:"MNPV4-MC4", brand:"MidNite Solar", image:solarBaseUrl+"/images/products/accessories/MIDNITECOMBINER.webp", availability:"in-stock", description:"4-string PV combiner box with MC4 connectors for consolidating solar array wiring.", specs:{ "Type":"3R Aluminum Pre-Wired Combiner", "Strings":"4", "Connectors":"MC4 Compatible", "Enclosure":"Type 3R", "Mount":"Wall Mount" }, features:["4-string capacity","MC4 compatible","Type 3R enclosure","Pre-wired","Wall mount"]},
+    { id:"solaredge-se1000-rsd-s3-b-rapid-shutdown-kit", name:"SolarEdge SE1000-RSD-S3-B Rapid Shutdown Kit", model:"SE1000-RSD-S3-B", brand:"SolarEdge", image:solarBaseUrl+"/images/products/accessories/SOLAREDGEKIT.webp", availability:"in-stock", description:"Complete rapid shutdown kit for SolarEdge systems ensuring NEC 690.12 compliance.", specs:{ "Type":"Rapid Shutdown Kit", "Compliance":"NEC 690.12", "Voltage":"1000V DC", "Shutdown Time":"<30 seconds to <30V" }, features:["NEC 690.12 compliant","1000V DC rated","<30V in 30 seconds","SolarEdge compatible"]}
+  ]
+};
+function SolarPage() {
+  const [selCat, setSelCat] = v.useState("all"),
+    [avFilter, setAvFilter] = v.useState("all"),
+    [mobOpen, setMobOpen] = v.useState(!1),
+    nav = lr();
+  v.useEffect(() => { window.scrollTo({ top: 0, behavior: "smooth" }); }, [selCat, avFilter]);
+  v.useEffect(() => {
+    const style = document.createElement("style");
+    style.textContent = "#solar-products-container::-webkit-scrollbar { display: none; }";
+    document.head.appendChild(style);
+    return () => { document.head.removeChild(style); };
+  }, []);
+  const getProducts = () => {
+    let items = [];
+    if (selCat === "all") items = Object.values(solarProductData).flat();
+    else items = solarProductData[selCat] || [];
+    if (avFilter !== "all") items = items.filter(p => p.availability === avFilter);
+    return items;
+  };
+  const filtered = getProducts();
+  const activeCat = solarCategories.find(c => c.id === selCat);
+  const cs = {
+    page: { padding: "2rem 0", background: "#fff7ed", minHeight: "100vh" },
+    wrap: { maxWidth: "1280px", margin: "0 auto", padding: "0 1rem" },
+    h1: { fontSize: "2rem", fontWeight: 700, color: "#0f172a", marginBottom: "0.25rem" },
+    sub: { fontSize: "1rem", color: "#475569", marginBottom: "1.5rem" },
+    mobBtn: { width: "100%", display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem", padding: "0.75rem 1rem", background: "#fff", border: "1px solid #fdba74", borderRadius: "1rem", fontSize: "0.875rem", fontWeight: 600, color: "#334155", cursor: "pointer", marginBottom: "1.5rem" },
+    grid: { display: "grid", gridTemplateColumns: "280px 1fr", gap: "2rem" },
+    gridMob: { display: "grid", gridTemplateColumns: "1fr", gap: "1.5rem" },
+    sidebar: { display: "flex", flexDirection: "column", gap: "1.5rem", position: "sticky", top: "6rem", alignSelf: "start", maxHeight: "calc(100vh - 8rem)", overflowY: "auto" },
+    catBox: { background: "#fff", borderRadius: "1rem", border: "1px solid #fdba74", padding: "1.5rem", boxShadow: "0 1px 2px rgba(0,0,0,0.05)" },
+    catTitle: { fontSize: "1.125rem", fontWeight: 700, color: "#0f172a", marginBottom: "1rem", paddingBottom: "0.75rem", borderBottom: "1px solid #fdba74" },
+    catBtn: { width: "100%", textAlign: "left", padding: "0.75rem 1rem", borderRadius: "0.75rem", border: "none", cursor: "pointer", marginBottom: "0.25rem", transition: "all 0.15s" },
+    catBtnActive: { background: "#ffedd5", color: "#c2410c", fontWeight: 600 },
+    catBtnInactive: { background: "transparent", color: "#334155", fontWeight: 500 },
+    catName: { fontSize: "0.875rem", fontWeight: 600 },
+    catSub: { fontSize: "0.75rem", color: "#94a3b8", marginTop: "0.125rem" },
+    catSubActive: { fontSize: "0.75rem", color: "#ea580c", marginTop: "0.125rem" },
+    filterLabel: { display: "block", fontSize: "0.875rem", fontWeight: 600, color: "#334155", marginBottom: "0.5rem" },
+    select: { width: "100%", padding: "0.5rem 0.75rem", borderRadius: "0.5rem", border: "1px solid #fdba74", fontSize: "0.875rem", outline: "none", height: "auto", boxSizing: "border-box" },
+    clearBtn: { width: "100%", padding: "0.5rem 0.75rem", borderRadius: "0.75rem", border: "1px solid #fdba74", background: "transparent", color: "#c2410c", fontSize: "0.875rem", fontWeight: 600, cursor: "pointer", marginTop: "0.75rem" },
+    catHeader: { background: "#fff", borderRadius: "1rem", border: "1px solid #fdba74", padding: "1.5rem", marginBottom: "1.5rem", boxShadow: "0 1px 2px rgba(0,0,0,0.05)" },
+    catHeaderTitle: { fontSize: "1.5rem", fontWeight: 700, color: "#0f172a" },
+    catHeaderDesc: { fontSize: "0.875rem", color: "#64748b", marginTop: "0.5rem" },
+    count: { fontSize: "0.875rem", color: "#64748b", marginBottom: "1rem" },
+    prodGrid: { display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" },
+    prodGridMob: { display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "1rem" },
+    card: { background: "#fff", borderRadius: "1rem", border: "1px solid #fdba74", overflow: "hidden", cursor: "pointer", transition: "box-shadow 0.2s" },
+    cardImg: { position: "relative", height: "12rem", background: "#f9fafb", display: "flex", alignItems: "center", justifyContent: "center" },
+    img: { maxWidth: "100%", maxHeight: "100%", objectFit: "contain", padding: "1rem" },
+    badge: { position: "absolute", top: "0.5rem", right: "0.5rem", padding: "0.25rem 0.5rem", borderRadius: "9999px", fontSize: "0.7rem", fontWeight: 600 },
+    badgeIn: { background: "#dcfce7", color: "#15803d" },
+    badgeOut: { background: "#fee2e2", color: "#b91c1c" },
+    cardBody: { padding: "1rem 1.25rem" },
+    cardTitle: { fontSize: "0.875rem", fontWeight: 600, color: "#0f172a", marginBottom: "0.5rem", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", lineHeight: "1.4" },
+    spec: { fontSize: "0.75rem", color: "#64748b", lineHeight: "1.6" },
+    specLabel: { fontWeight: 600 },
+    priceRow: { display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "0.75rem", marginBottom: "0.75rem" },
+    price: { fontSize: "1.125rem", fontWeight: 700, color: "#c2410c" },
+    wattage: { fontSize: "0.75rem", color: "#64748b" },
+    btnRow: { display: "flex", gap: "0.5rem" },
+    btnPrimary: { flex: 1, textAlign: "center", padding: "0.5rem 0.75rem", borderRadius: "0.75rem", background: "#c2410c", color: "#fff", fontSize: "0.75rem", fontWeight: 600, border: "none", cursor: "pointer", textDecoration: "none", display: "block" },
+    btnSecondary: { flex: 1, textAlign: "center", padding: "0.5rem 0.75rem", borderRadius: "0.75rem", background: "transparent", color: "#c2410c", fontSize: "0.75rem", fontWeight: 600, border: "1px solid #fdba74", cursor: "pointer", textDecoration: "none", display: "block" },
+    empty: { textAlign: "center", padding: "4rem 1rem", background: "#fff", borderRadius: "1rem", border: "1px solid #fdba74" },
+    emptyTitle: { fontSize: "1.125rem", fontWeight: 600, color: "#0f172a", marginBottom: "0.25rem" },
+    emptyText: { color: "#64748b", marginBottom: "1rem" }
+  };
+  const isMob = typeof window !== "undefined" && window.innerWidth < 1024;
+  return s.jsx("div", { style: cs.page, children:
+    s.jsxs("div", { style: cs.wrap, children: [
+      s.jsx("h1", { style: cs.h1, children: "Solar Products & Equipment" }),
+      s.jsx("p", { style: cs.sub, children: "Premium solar panels, inverters, batteries, and complete kits. All equipment is UL-listed and backed by manufacturer warranties." }),
+      s.jsx("div", { style: { background: "linear-gradient(135deg, #c2410c 0%, #ea580c 100%)", borderRadius: "1rem", padding: "1rem 1.5rem", marginBottom: "1.5rem", display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }, children:
+        s.jsxs("p", { style: { color: "#fff", fontSize: "0.95rem", fontWeight: 500, margin: 0, display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap", justifyContent: "center" }, children: [
+          s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: s.jsx("path", { d: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6" }) }),
+          s.jsx("span", { children: "For solar inquiries, contact us at:" }),
+          s.jsx("a", { href: "mailto:solar@gtrsupply.com", style: { color: "#fff", fontWeight: 700, textDecoration: "underline" }, children: "solar@gtrsupply.com" }),
+          s.jsx("span", { children: "or call" }),
+          s.jsx("a", { href: "tel:+17373035599", style: { color: "#fff", fontWeight: 700, textDecoration: "underline" }, children: "(737) 303-5599" })
+        ]})
+      }),
+      isMob ? s.jsx("button", { style: cs.mobBtn, onClick: () => setMobOpen(!mobOpen), children: mobOpen ? "Hide Filters" : "Filters & Categories" }) : null,
+      s.jsxs("div", { style: isMob ? cs.gridMob : cs.grid, children: [
+        (!isMob || mobOpen) ? s.jsx("div", { style: isMob ? {} : cs.sidebar, children:
+          s.jsxs("div", { style: { display: "flex", flexDirection: "column", gap: "1.5rem" }, children: [
+            s.jsxs("div", { style: cs.catBox, children: [
+              s.jsx("h2", { style: cs.catTitle, children: "Categories" }),
+              solarCategories.map(cat => {
+                const catIcons = {
+                  "all": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("line", { x1: "3", y1: "12", x2: "21", y2: "12" }), s.jsx("line", { x1: "3", y1: "6", x2: "21", y2: "6" }), s.jsx("line", { x1: "3", y1: "18", x2: "21", y2: "18" })] }),
+                  "solar-panels": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("rect", { x: "3", y: "3", width: "18", height: "18", rx: "2" }), s.jsx("line", { x1: "3", y1: "9", x2: "21", y2: "9" }), s.jsx("line", { x1: "3", y1: "15", x2: "21", y2: "15" }), s.jsx("line", { x1: "9", y1: "3", x2: "9", y2: "21" }), s.jsx("line", { x1: "15", y1: "3", x2: "15", y2: "21" })] }),
+                  "inverters": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("rect", { x: "2", y: "6", width: "20", height: "12", rx: "2" }), s.jsx("line", { x1: "6", y1: "12", x2: "10", y2: "12" }), s.jsx("line", { x1: "8", y1: "10", x2: "8", y2: "14" }), s.jsx("line", { x1: "14", y1: "12", x2: "18", y2: "12" })] }),
+                  "storage-solutions": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("rect", { x: "2", y: "7", width: "20", height: "14", rx: "2" }), s.jsx("line", { x1: "6", y1: "7", x2: "6", y2: "4" }), s.jsx("line", { x1: "18", y1: "7", x2: "18", y2: "4" }), s.jsx("line", { x1: "6", y1: "14", x2: "18", y2: "14" })] }),
+                  "charge-controllers": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("circle", { cx: "12", cy: "12", r: "3" }), s.jsx("path", { d: "M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" })] }),
+                  "racking": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("polygon", { points: "12 2 2 7 12 12 22 7 12 2" }), s.jsx("polyline", { points: "2 17 12 22 22 17" }), s.jsx("polyline", { points: "2 12 12 17 22 12" })] }),
+                  "mounting": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("path", { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }), s.jsx("polyline", { points: "3.27 6.96 12 12.01 20.73 6.96" }), s.jsx("line", { x1: "12", y1: "22.08", x2: "12", y2: "12" })] }),
+                  "solar-equipment": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("path", { d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" })] }),
+                  "accessories": s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [s.jsx("circle", { cx: "12", cy: "12", r: "10" }), s.jsx("line", { x1: "12", y1: "8", x2: "12", y2: "16" }), s.jsx("line", { x1: "8", y1: "12", x2: "16", y2: "12" })] })
+                };
+                return s.jsxs("button", {
+                  onClick: () => { setSelCat(cat.id); setMobOpen(!1); },
+                  style: { ...cs.catBtn, ...(selCat === cat.id ? cs.catBtnActive : cs.catBtnInactive), display: "flex", alignItems: "center", gap: "0.75rem" },
+                  children: [
+                    s.jsx("span", { style: { flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", width: "28px", height: "28px", borderRadius: "6px", background: selCat === cat.id ? "#c2410c" : "#f1f5f9", color: selCat === cat.id ? "#fff" : "#64748b" }, children: catIcons[cat.id] || catIcons["all"] }),
+                    s.jsxs("div", { style: { textAlign: "left" }, children: [
+                      s.jsx("div", { style: cs.catName, children: cat.name }),
+                      cat.subcategories ? s.jsx("div", { style: selCat === cat.id ? cs.catSubActive : cs.catSub, children: cat.subcategories.length + " subcategories" }) : null
+                    ]})
+                  ]
+                }, cat.id);
+              })
+            ]}),
+            s.jsxs("div", { style: cs.catBox, children: [
+              s.jsx("h2", { style: cs.catTitle, children: "Filters" }),
+              s.jsx("label", { style: cs.filterLabel, children: "Availability" }),
+              s.jsxs("select", { value: avFilter, onChange: (e) => setAvFilter(e.target.value), style: cs.select, children: [
+                s.jsx("option", { value: "all", children: "All Products" }),
+                s.jsx("option", { value: "in-stock", children: "In Stock" }),
+                s.jsx("option", { value: "out-of-stock", children: "Out of Stock" })
+              ]}),
+              s.jsx("button", { onClick: () => { setSelCat("all"); setAvFilter("all"); }, style: cs.clearBtn, children: "Clear Filters" })
+            ]})
+          ]})
+        }) : null,
+        s.jsxs("div", { children: [
+          activeCat ? s.jsxs("div", { style: cs.catHeader, children: [
+            s.jsx("h2", { style: cs.catHeaderTitle, children: activeCat.name }),
+            s.jsx("p", { style: cs.catHeaderDesc, children: activeCat.description })
+          ]}) : null,
+          s.jsx("p", { style: cs.count, children: "Showing " + filtered.length + " products" }),
+          s.jsxs("div", { style: { position: "relative" }, children: [
+          s.jsx("div", { id: "solar-products-container", style: { maxHeight: "920px", overflowY: "scroll", padding: "1rem", borderRadius: "1rem", border: "1px solid #fdba74", background: "linear-gradient(180deg, rgba(255,247,237,0.3) 0%, rgba(255,255,255,0.6) 100%)", scrollbarWidth: "none", msOverflowStyle: "none" }, children:
+          filtered.length > 0 ?
+            s.jsx("div", { style: isMob ? cs.prodGridMob : cs.prodGrid, children:
+              filtered.map(product => {
+                const pw = product.specs && product.specs.Power ? product.specs.Power : null;
+                return s.jsxs("div", {
+                  style: cs.card,
+                  onClick: () => nav("/solar/" + product.id),
+                  onMouseEnter: (e) => { e.currentTarget.style.boxShadow = "0 10px 15px -3px rgba(0,0,0,0.1)"; },
+                  onMouseLeave: (e) => { e.currentTarget.style.boxShadow = "none"; },
+                  children: [
+                    s.jsxs("div", { style: cs.cardImg, children: [
+                      s.jsx("img", { src: product.image, alt: product.name, style: cs.img, onError: (e) => { e.target.src = solarFallbackImg; } }),
+                      s.jsx("span", { style: { ...cs.badge, ...(product.availability === "in-stock" ? cs.badgeIn : cs.badgeOut) }, children: product.availability === "in-stock" ? "In Stock" : "Out of Stock" })
+                    ]}),
+                    s.jsxs("div", { style: cs.cardBody, children: [
+                      s.jsx("h3", { style: cs.cardTitle, children: product.name }),
+                      product.model ? s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: "Model: " }), product.model] }) : null,
+                      Object.entries(product.specs || {}).map(([k, val]) =>
+                        s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: k + ": " }), val] }, k)
+                      ),
+                      product.brand ? s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: "Brand: " }), product.brand] }) : null,
+                      s.jsxs("div", { style: cs.priceRow, children: [
+                        s.jsx("div", { style: cs.price, children: "Call for Price" }),
+                        pw ? s.jsx("div", { style: cs.wattage, children: pw + " Power" }) : null
+                      ]}),
+                      s.jsxs("div", { style: cs.btnRow, children: [
+                        s.jsx("a", { href: "tel:+17373035599", style: {...cs.btnPrimary, display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", textDecoration: "none"}, children: [s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: s.jsx("path", { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }) }), "(737) 303-5599"] }),
+                        s.jsx(F, { to: "/solar/" + product.id, style: cs.btnSecondary, children: "Details" })
+                      ]})
+                    ]})
+                  ]
+                }, product.id);
+              })
+            })
+          :
+            s.jsxs("div", { style: cs.empty, children: [
+              s.jsx("h3", { style: cs.emptyTitle, children: "No products found" }),
+              s.jsx("p", { style: cs.emptyText, children: "Try adjusting your filters or browse a different category." }),
+              s.jsx("button", { onClick: () => { setSelCat("all"); setAvFilter("all"); }, style: cs.btnPrimary, children: "Clear All Filters" })
+            ]})
+          }),
+          s.jsx("div", { style: { position: "absolute", bottom: 0, left: 0, right: 0, height: "60px", background: "linear-gradient(to top, rgba(255,247,237,0.95) 0%, rgba(255,247,237,0) 100%)", pointerEvents: "none", borderRadius: "0 0 1rem 1rem" } })
+          ]})
+        ]})
+      ]})
+    ]})
+  });
+}
+function SolarDetailPage() {
+  const { productId } = t0(),
+    nav = lr(),
+    allProducts = Object.values(solarProductData).flat(),
+    product = allProducts.find(p => p.id === productId);
+  v.useEffect(() => { window.scrollTo({ top: 0, behavior: "smooth" }); }, [productId]);
+  if (!product) return s.jsxs("div", { className: "min-h-screen bg-gray-50 flex items-center justify-center", children: [
+    s.jsxs("div", { className: "text-center p-8", children: [
+      s.jsx("h1", { className: "text-2xl font-bold text-slate-900", children: "Product Not Found" }),
+      s.jsx("p", { className: "text-slate-600 mt-2", children: "The product you're looking for doesn't exist." }),
+      s.jsx("button", { onClick: () => nav("/solar"), className: "mt-4 px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-black", children: "Back to Solar Products" })
+    ]})
+  ]});
+  const catEntry = Object.entries(solarProductData).find(([,prods]) => prods.some(p => p.id === productId));
+  const catName = catEntry ? solarCategories.find(c => c.id === catEntry[0])?.name || catEntry[0] : "Solar";
+  const related = allProducts.filter(p => p.id !== productId && catEntry && solarProductData[catEntry[0]]?.some(rp => rp.id === p.id)).slice(0, 3);
+  return s.jsx("div", { className: "min-h-screen bg-gray-50", children:
+    s.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8", children: [
+      s.jsxs("nav", { className: "flex items-center gap-2 text-sm text-slate-500 mb-8 flex-wrap", children: [
+        s.jsx(F, { to: "/", className: "hover:text-gray-900", children: "Home" }),
+        s.jsx("span", { children: "/" }),
+        s.jsx(F, { to: "/solar", className: "hover:text-gray-900", children: "Products" }),
+        s.jsx("span", { children: "/" }),
+        s.jsx(F, { to: "/solar", className: "hover:text-gray-900", children: catName }),
+        s.jsx("span", { children: "/" }),
+        s.jsx("span", { className: "text-slate-900", children: product.name })
+      ]}),
+      s.jsxs("div", { className: "grid lg:grid-cols-2 gap-12", children: [
+        s.jsxs("div", { className: "space-y-4", children: [
+          s.jsx("div", { className: "bg-white rounded-2xl border border-gray-300 overflow-hidden", children:
+            s.jsx("img", { src: product.image, alt: product.name, className: "w-full h-96 object-contain bg-gray-50", onError: (e) => { e.target.src = "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop"; } })
+          }),
+          s.jsxs("div", { className: "flex items-center justify-between", children: [
+            s.jsx("div", { className: product.availability === "in-stock" ? "px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700" : "px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700", children: product.availability === "in-stock" ? "In Stock" : "Out of Stock" }),
+            s.jsxs("div", { className: "text-sm text-gray-600", children: ["Model: ", product.model] })
+          ]})
+        ]}),
+        s.jsxs("div", { className: "space-y-6", children: [
+          s.jsxs("div", { children: [
+            s.jsx("h1", { className: "text-3xl font-bold text-gray-900 mb-2", children: product.name }),
+            product.description ? s.jsx("p", { className: "text-lg text-gray-600 mb-4", children: product.description }) : null,
+            s.jsxs("div", { className: "flex items-center flex-wrap gap-4 text-sm text-gray-600", children: [
+              product.brand ? s.jsxs("span", { children: [s.jsx("strong", { children: "Brand:" }), " ", product.brand] }) : null,
+              product.specs && product.specs.Type ? s.jsxs("span", { children: [s.jsx("strong", { children: "Type:" }), " ", product.specs.Type] }) : null,
+              product.specs && (product.specs.Power || product.specs["Power Output"]) ? s.jsxs("span", { children: [s.jsx("strong", { children: "Power:" }), " ", product.specs.Power || product.specs["Power Output"]] }) : null
+            ]})
+          ]}),
+          s.jsx("div", { className: "bg-white rounded-2xl border border-gray-300 p-6", children:
+            s.jsxs("div", { className: "text-center", children: [
+              s.jsx("div", { className: "text-lg font-semibold text-gray-700 mb-3", children: "Call for Price" }),
+              s.jsx("p", { className: "text-gray-600 mb-4", children: "Contact us for competitive pricing and bulk discounts" }),
+              s.jsx("a", { href: "tel:+17373035599", className: "inline-flex items-center justify-center gap-3 px-8 py-4 bg-gray-900 hover:bg-black text-white font-bold text-xl rounded-xl transition-colors shadow-lg hover:shadow-xl", style: { textDecoration: "none" }, children: [
+                s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: s.jsx("path", { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }) }),
+                "(737) 303-5599"
+              ] })
+            ]})
+          }),
+          product.features && product.features.length > 0 ?
+            s.jsxs("div", { className: "bg-white rounded-2xl border border-gray-300 p-6", children: [
+              s.jsx("h3", { className: "text-lg font-semibold text-gray-900 mb-4", children: "Key Features" }),
+              s.jsx("ul", { className: "space-y-2", children:
+                product.features.map((feature, idx) =>
+                  s.jsxs("li", { className: "flex items-start", children: [
+                    s.jsx("svg", { className: "w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0", fill: "currentColor", viewBox: "0 0 20 20", children:
+                      s.jsx("path", { fillRule: "evenodd", d: "M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clipRule: "evenodd" })
+                    }),
+                    s.jsx("span", { className: "text-gray-700", children: feature })
+                  ]}, idx)
+                )
+              })
+            ]}) : null
+        ]})
+      ]}),
+      Object.keys(product.specs || {}).length > 0 ?
+        s.jsxs("div", { className: "mt-12 bg-white rounded-2xl border border-gray-300 p-6", children: [
+          s.jsx("h3", { className: "text-xl font-semibold text-gray-900 mb-6", children: "Technical Specifications" }),
+          s.jsx("div", { className: "grid md:grid-cols-2 gap-6", children:
+            Object.entries(product.specs).map(([key, val]) =>
+              s.jsxs("div", { className: "flex justify-between py-2 border-b border-gray-200", children: [
+                s.jsx("span", { className: "font-medium text-gray-700", children: key }),
+                s.jsx("span", { className: "text-gray-900", children: val })
+              ]}, key)
+            )
+          })
+        ]}) : null,
+      related.length > 0 ?
+        s.jsxs("div", { className: "mt-12", children: [
+          s.jsx("h3", { className: "text-xl font-semibold text-gray-900 mb-6", children: "Related Products" }),
+          s.jsx("div", { className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-6", children:
+            related.map(rp =>
+              s.jsxs(F, { to: "/solar/" + rp.id, className: "bg-white rounded-2xl border border-gray-300 p-6 hover:shadow-lg transition-shadow", children: [
+                s.jsx("img", { src: rp.image, alt: rp.name, className: "w-full h-32 object-contain bg-gray-50 rounded-lg mb-4", onError: (e) => { e.target.src = solarFallbackImg; } }),
+                s.jsx("h4", { className: "font-semibold text-gray-900 line-clamp-2 mb-2", children: rp.name }),
+                rp.brand ? s.jsxs("p", { className: "text-sm text-gray-600", children: ["Brand: ", rp.brand] }) : null
+              ]}, rp.id)
+            )
+          })
+        ]}) : null
+    ]})
+  });
+}
 function Fy() {
   return s.jsx($0, {
     children: s.jsx(_0, {
@@ -22447,6 +23966,14 @@ function Fy() {
                         s.jsx(te, {
                           path: "/products",
                           element: s.jsx(Kx, {}),
+                        }),
+                        s.jsx(te, {
+                          path: "/solar",
+                          element: s.jsx(SolarPage, {}),
+                        }),
+                        s.jsx(te, {
+                          path: "/solar/:productId",
+                          element: s.jsx(SolarDetailPage, {}),
                         }),
                         s.jsx(te, {
                           path: "/products/:id",
