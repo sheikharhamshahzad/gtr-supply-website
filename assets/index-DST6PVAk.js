@@ -23594,16 +23594,17 @@ function SolarPage() {
     count: { fontSize: "0.875rem", color: "#64748b", marginBottom: "1rem" },
     prodGrid: { display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" },
     prodGridMob: { display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "1rem" },
-    card: { background: "#fff", borderRadius: "1rem", border: "1px solid #fdba74", overflow: "hidden", cursor: "pointer", transition: "box-shadow 0.2s" },
-    cardImg: { position: "relative", height: "12rem", background: "#f9fafb", display: "flex", alignItems: "center", justifyContent: "center" },
+    card: { background: "#fff", borderRadius: "1rem", border: "1px solid #fdba74", overflow: "hidden", transition: "box-shadow 0.2s", display: "flex", flexDirection: "column", height: "100%" },
+    cardImg: { position: "relative", height: "10rem", background: "#f9fafb", display: "flex", alignItems: "center", justifyContent: "center" },
     img: { maxWidth: "100%", maxHeight: "100%", objectFit: "contain", padding: "1rem" },
     badge: { position: "absolute", top: "0.5rem", right: "0.5rem", padding: "0.25rem 0.5rem", borderRadius: "9999px", fontSize: "0.7rem", fontWeight: 600 },
     badgeIn: { background: "#dcfce7", color: "#15803d" },
     badgeOut: { background: "#fee2e2", color: "#b91c1c" },
-    cardBody: { padding: "1rem 1.25rem" },
-    cardTitle: { fontSize: "0.875rem", fontWeight: 600, color: "#0f172a", marginBottom: "0.5rem", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", lineHeight: "1.4" },
-    spec: { fontSize: "0.75rem", color: "#64748b", lineHeight: "1.6" },
-    specLabel: { fontWeight: 600 },
+    cardBody: { padding: "1rem 1.25rem", display: "flex", flexDirection: "column", flex: 1 },
+    cardTitle: { fontSize: "0.875rem", fontWeight: 600, color: "#0f172a", marginBottom: "0.5rem", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", lineHeight: "1.4", height: "2.5rem" },
+    specsContainer: { flex: 1, marginBottom: "0.75rem" },
+    spec: { fontSize: "0.75rem", color: "#64748b", lineHeight: "1.8" },
+    specLabel: { fontWeight: 600, color: "#334155" },
     priceRow: { display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "0.75rem", marginBottom: "0.75rem" },
     price: { fontSize: "1.125rem", fontWeight: 700, color: "#c2410c" },
     wattage: { fontSize: "0.75rem", color: "#64748b" },
@@ -23623,9 +23624,7 @@ function SolarPage() {
         s.jsxs("p", { style: { color: "#fff", fontSize: "0.95rem", fontWeight: 500, margin: 0, display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap", justifyContent: "center" }, children: [
           s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "20", height: "20", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: s.jsx("path", { d: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6" }) }),
           s.jsx("span", { children: "For solar inquiries, contact us at:" }),
-          s.jsx("a", { href: "mailto:solar@gtrsupply.com", style: { color: "#fff", fontWeight: 700, textDecoration: "underline" }, children: "solar@gtrsupply.com" }),
-          s.jsx("span", { children: "or call" }),
-          s.jsx("a", { href: "tel:+17373035599", style: { color: "#fff", fontWeight: 700, textDecoration: "underline" }, children: "(737) 303-5599" })
+          s.jsx("a", { href: "mailto:solar@gtrsupply.com", style: { color: "#fff", fontWeight: 700, textDecoration: "underline" }, children: "solar@gtrsupply.com" })
         ]})
       }),
       isMob ? s.jsx("button", { style: cs.mobBtn, onClick: () => setMobOpen(!mobOpen), children: mobOpen ? "Hide Filters" : "Filters & Categories" }) : null,
@@ -23682,12 +23681,17 @@ function SolarPage() {
           filtered.length > 0 ?
             s.jsx("div", { style: isMob ? cs.prodGridMob : cs.prodGrid, children:
               filtered.map(product => {
-                const pw = product.specs && product.specs.Power ? product.specs.Power : null;
+                const specs = product.specs || {};
+                const displaySpecs = [
+                  { label: "Model", value: product.model },
+                  { label: "Power", value: specs["Power Output"] || specs["Power"] },
+                  { label: "Cells", value: specs["Cells"] },
+                  { label: "Voltage", value: specs["Voltage"] },
+                  { label: "Type", value: specs["Type"] || specs["Module Type"] || specs["Cell Type"] },
+                  { label: "Brand", value: product.brand }
+                ].filter(s => s.value);
                 return s.jsxs("div", {
                   style: cs.card,
-                  onClick: () => nav("/solar/" + product.id),
-                  onMouseEnter: (e) => { e.currentTarget.style.boxShadow = "0 10px 15px -3px rgba(0,0,0,0.1)"; },
-                  onMouseLeave: (e) => { e.currentTarget.style.boxShadow = "none"; },
                   children: [
                     s.jsxs("div", { style: cs.cardImg, children: [
                       s.jsx("img", { src: product.image, alt: product.name, style: cs.img, onError: (e) => { e.target.src = solarFallbackImg; } }),
@@ -23695,19 +23699,12 @@ function SolarPage() {
                     ]}),
                     s.jsxs("div", { style: cs.cardBody, children: [
                       s.jsx("h3", { style: cs.cardTitle, children: product.name }),
-                      product.model ? s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: "Model: " }), product.model] }) : null,
-                      Object.entries(product.specs || {}).map(([k, val]) =>
-                        s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: k + ": " }), val] }, k)
-                      ),
-                      product.brand ? s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: "Brand: " }), product.brand] }) : null,
-                      s.jsxs("div", { style: cs.priceRow, children: [
-                        s.jsx("div", { style: cs.price, children: "Call for Price" }),
-                        pw ? s.jsx("div", { style: cs.wattage, children: pw + " Power" }) : null
-                      ]}),
-                      s.jsxs("div", { style: cs.btnRow, children: [
-                        s.jsx("a", { href: "tel:+17373035599", style: {...cs.btnPrimary, display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", textDecoration: "none"}, children: [s.jsx("svg", { xmlns: "http://www.w3.org/2000/svg", width: "18", height: "18", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: s.jsx("path", { d: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" }) }), "(737) 303-5599"] }),
-                        s.jsx(F, { to: "/solar/" + product.id, style: cs.btnSecondary, children: "Details" })
-                      ]})
+                      s.jsx("div", { style: cs.specsContainer, children:
+                        displaySpecs.slice(0, 6).map(spec =>
+                          s.jsxs("p", { style: cs.spec, children: [s.jsx("span", { style: cs.specLabel, children: spec.label + ": " }), spec.value] }, spec.label)
+                        )
+                      }),
+                      s.jsx(F, { to: "/solar/" + product.id, style: { width: "100%", textAlign: "center", padding: "0.625rem 1rem", borderRadius: "0.5rem", background: "#c2410c", color: "#fff", fontSize: "0.875rem", fontWeight: 600, border: "none", cursor: "pointer", textDecoration: "none", display: "block", marginTop: "auto" }, children: "Details" })
                     ]})
                   ]
                 }, product.id);
